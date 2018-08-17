@@ -1,6 +1,6 @@
 <template>
     <div class="login_web">
-      <mt-header title="MINT_APP" >
+      <mt-header title="MINT_APP 登录" >
         <router-link to="/images" slot="left">
             <mt-button icon="back">个人相册</mt-button>
         </router-link>
@@ -8,12 +8,17 @@
       </mt-header>
         <card :cardTitle=cardTitle :card_content=myself_content :isCardshow=isCardshow></card>
       <div class="login_content">
-    
+        <div class="field">
+          <mt-field style="backgroundColor:rgb(86, 181, 212)" label="用户名" placeholder="请输入用户名" v-model="username"></mt-field>
+          <mt-field style="backgroundColor:rgb(86, 181, 212)" label="密码" placeholder="请输入密码" type="password" v-model="password"></mt-field>
+          <mt-button class="loginBtn" type="primary" >登录</mt-button>
+          <mt-button class="regisBtn" plain @click="regis()">注册</mt-button>
+        </div>
       </div>
     </div>
 </template>
 <script>
-import { Toast } from "mint-ui";
+import { Field } from "mint-ui";
 import card from "./common/card";
 export default {
   components: {
@@ -42,7 +47,10 @@ export default {
         "https://github.com/yanquankun" +
         ">个人github链接</a>",
       cardTitle: "自我介绍",
-      isCardshow: false
+      isCardshow: false,
+      username: null,
+      email: null,
+      password: null
     };
   },
   methods: {
@@ -52,6 +60,9 @@ export default {
       setTimeout(() => {
         that.isCardshow = false;
       }, 3000);
+    },
+    regis(){
+      this.$router.push("/regis");
     }
   }
 };
@@ -62,7 +73,27 @@ export default {
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: rgb(145, 183, 233);
+    background: url(./../assets/墙纸.jpg) no-repeat;
+    background-size: 100% 100%;
+    .field {
+      width: 80%;
+      height: 23%;
+      margin-top: 55%;
+      margin-left: 10%;
+      background-color: rgb(86, 181, 212);
+      border: 1px solid rgb(133, 185, 196);
+      .loginBtn {
+        width: 80px;
+        height: 32px;
+        margin-top: 10px;
+        margin-right: 20px;
+      }
+      .regisBtn {
+        width: 80px;
+        height: 32px;
+        margin-top: 10px;
+      }
+    }
   }
 }
 </style>
