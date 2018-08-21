@@ -8,14 +8,12 @@
 </template>
 <script>
 export default {
-  props: ["cardTitle", "card_content","isCardshow"],
+  props: ["cardTitle", "card_content", "isCardshow"],
   data() {
-    return {
-    };
+    return {};
   },
   methods: {
-    clickMask() {
-    }
+    clickMask() {}
   }
 };
 </script>

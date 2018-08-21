@@ -1,11 +1,14 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Login from '@/components/Login'
+import index from '@/components/index'
 import selfimages from '@/components/views/selfimages'
 import regis from '@/components/views/regis'
+import error from '@/components/views/error'
 Vue.use(Router)
 
 export default new Router({
+    // 使用h5路由模式，避免路由出现#
     mode: 'history',
     base: '/mint',
     routes: [{
@@ -25,7 +28,11 @@ export default new Router({
         name: 'regis',
         component: regis
     }, {
+        path: '/index',
+        name: 'index',
+        component: index
+    }, {
         path: '**',
-        component: Login
+        component: error
     }]
 })
