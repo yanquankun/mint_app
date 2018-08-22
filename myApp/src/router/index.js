@@ -10,7 +10,7 @@ Vue.use(Router)
 export default new Router({
     // 使用h5路由模式，避免路由出现#
     mode: 'history',
-    base: '/mint',
+    base: '/',
     routes: [{
         path: '/',
         name: 'Login',
@@ -29,6 +29,9 @@ export default new Router({
         component: regis
     }, {
         path: '/index',
+        meta: {
+            requireAuth: true
+        },
         name: 'index',
         component: index
     }, {

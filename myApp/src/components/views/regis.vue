@@ -38,7 +38,7 @@ export default {
   position: absolute;
   height: 100%;
   width: 100%;
-  background: url(./../../assets/墙纸.jpg) no-repeat;
+  background: url(./../../assets/a.jpg) no-repeat;
   background-size: 100% 100%;
   .lists {
     width: 80%;
