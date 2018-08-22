@@ -4,6 +4,9 @@
             <router-link to="/Login" slot="left">
                 <mt-button icon="back">返回</mt-button>
             </router-link>
+            <router-link to="/index" slot="right">
+                <mt-button icon="go">主页</mt-button>
+            </router-link>
         </mt-header>
         <div class="contract-list" v-for="item in list" :key="item.id">
             <img class="contract-item" v-lazy="item.img" alt="服务器出错啦^_^">
