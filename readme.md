@@ -5,6 +5,10 @@
 ## Build Setup
 
 ``` bash
+创建于mint(闫全堃)
+该移动端项目仅为自娱自乐
+前端使用技术为vue+vuex+vue-router+mint-ui+axios
+后端使用技术为mysql+springmvc(正在研发中)
 # install dependencies
 npm install
 
