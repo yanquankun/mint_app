@@ -5,6 +5,7 @@ import index from '@/components/index'
 import selfimages from '@/components/views/selfimages'
 import regis from '@/components/views/regis'
 import error from '@/components/views/error'
+
 Vue.use(Router)
 
 export default new Router({

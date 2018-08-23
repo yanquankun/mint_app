@@ -9,8 +9,8 @@
         <card :cardTitle=cardTitle :card_content=myself_content :isCardshow=isCardshow></card>
       <div class="login_content">
         <div class="field">
-          <mt-field style="backgroundColor:rgb(86, 181, 212)" label="用户名" placeholder="请输入用户名" v-model="username"></mt-field>
-          <mt-field style="backgroundColor:rgb(86, 181, 212)" label="密码" placeholder="请输入密码" type="password" v-model="password"></mt-field>
+          <mt-field style="backgroundColor:rgb(86, 181, 212)" label="用户名" placeholder="请输入用户名" v-model="username" disableClear></mt-field>
+          <mt-field style="backgroundColor:rgb(86, 181, 212)" label="密码" placeholder="请输入密码" type="password" v-model="password" disableClear></mt-field>
           <mt-button class="loginBtn" type="primary" @click="login()">登录</mt-button>
           <mt-button class="regisBtn" plain @click="regis()">注册</mt-button>
         </div>
@@ -49,9 +49,9 @@ export default {
         ">个人github链接</a>",
       cardTitle: "自我介绍",
       isCardshow: false,
-      username: "",
+      username: null,
       email: null,
-      password: ""
+      password: null
     };
   },
   computed: {
@@ -74,7 +74,7 @@ export default {
       this.$router.push("/regis");
     },
     isTrueAcc() {
-      if (this.username == "" || this.password == "") {
+      if (this.username == null || this.password == null) {
         Toast("账号或密码不能为空");
       } else if (
         this.username != this.getDefAccount.username ||
@@ -94,8 +94,8 @@ export default {
           this.isLogin = true;
           sessionStorage.setItem("getLogin", this.isLogin);
           this.$router.push("/index");
-          this.password = "";
-          this.username = "";
+          this.password = null;
+          this.username = null;
         } else {
           this.isLogin = false;
           sessionStorage.setItem("getLogin", this.isLogin);
