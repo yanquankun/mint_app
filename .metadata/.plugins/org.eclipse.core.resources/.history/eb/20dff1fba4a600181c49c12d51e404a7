@@ -1,0 +1,14 @@
+package cn.yun.service;
+
+import org.springframework.stereotype.Service;
+import java.util.List;
+
+import cn.yun.dao.UserDao;
+import cn.yun.dto.TUser;
+
+@Service("UserService")
+public class UserService{
+	public List<TUser> getAllUser() {
+		return userDao.getAllUser();
+	}
+}

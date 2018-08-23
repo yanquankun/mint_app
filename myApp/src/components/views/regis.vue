@@ -23,12 +23,17 @@ export default {
       email: null,
       password: null,
       phone: null,
-      birthday: null
+      birthday: null,
+      users:{}
     };
   },
   methods:{
       sava(){
-          console.log(this.username);
+          this.users.username = this.username;
+          this.users.email = this.email;
+          this.users.password = this.password;
+          this.users.phone = this.phone;
+          this.users.birthday = this.birthday;
       }
   }
 };
