@@ -1,1 +1,1 @@
-export const gettersMsg = state => state.msg;
+export const getLogin = state => state.loginResult;

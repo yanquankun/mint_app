@@ -54,13 +54,13 @@ export default {
       password: null
     };
   },
-  computed: {
-    getDefAccount: function() {
-      return this.$store.state.defAccount;
-    }
-  },
   mounted() {
     this.enterLogin();
+  },
+  computed: {
+    LoginRes: function() {
+      return this.$store.state.loginResult;
+    }
   },
   methods: {
     introduce() {
@@ -73,33 +73,21 @@ export default {
     regis() {
       this.$router.push("/regis");
     },
-    isTrueAcc() {
-      if (this.username == null || this.password == null) {
-        Toast("账号或密码不能为空");
-      } else if (
-        this.username != this.getDefAccount.username ||
-        this.password != this.getDefAccount.pwd
-      ) {
-        Toast("账户错误");
-      } else {
-        return true;
-      }
-    },
     login() {
-      if (this.isTrueAcc()) {
-        if (
-          this.username == this.getDefAccount.username &&
-          this.password == this.getDefAccount.pwd
-        ) {
-          this.isLogin = true;
-          sessionStorage.setItem("getLogin", this.isLogin);
-          this.$router.push("/index");
-          this.password = null;
-          this.username = null;
-        } else {
-          this.isLogin = false;
-          sessionStorage.setItem("getLogin", this.isLogin);
-        }
+      this.$store.dispatch("getLogin", {
+        username: this.username,
+        password: this.password
+      });
+      if (this.LoginRes.success == "true") {
+        this.isLogin = true;
+        sessionStorage.setItem("getLogin", this.isLogin);
+        this.$router.push("/index");
+        this.password = null;
+        this.username = null;
+      } else {
+        this.isLogin = false;
+        sessionStorage.setItem("getLogin", this.isLogin);
+        Toast(this.LoginRes.msg);
       }
     },
     enterLogin() {

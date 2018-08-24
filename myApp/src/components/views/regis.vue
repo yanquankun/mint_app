@@ -24,17 +24,34 @@ export default {
       password: null,
       phone: null,
       birthday: null,
-      users:{}
+      guid: "",
+      users: {}
     };
   },
-  methods:{
-      sava(){
-          this.users.username = this.username;
-          this.users.email = this.email;
-          this.users.password = this.password;
-          this.users.phone = this.phone;
-          this.users.birthday = this.birthday;
+  methods: {
+    sava() {
+      this.$http
+        .get("api/User/regis", {
+          params: {
+            guid: this.newguid(),
+            username: this.username,
+            email: this.email,
+            password: this.password,
+            phone: this.phone,
+            birthday: this.birthday
+          }
+        })
+        .then(response => {});
+    },
+    newguid() {
+      let guid = "";
+      for (let i = 1; i <= 32; i++) {
+        let n = Math.floor(Math.random() * 16.0).toString(16);
+        guid += n;
+        if (i == 8 || i == 12 || i == 16 || i == 20) guid += "-";
       }
+      return guid;
+    }
   }
 };
 </script>

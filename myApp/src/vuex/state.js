@@ -1,4 +1,4 @@
 const state = {
-    defAccount: { username: "mint", pwd: "mint" },
+    loginResult: { success: '', msg: '' }
 }
 export default state;

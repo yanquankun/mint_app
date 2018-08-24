@@ -1,0 +1,13 @@
+package cn.yun.dao;
+
+import org.springframework.stereotype.Repository;
+
+import cn.yun.dto.TLoginUser;
+import cn.yun.dto.TRegisUser;
+
+@Repository("userDao")
+public interface UserDao {
+
+	public TLoginUser getUserByUsername(String username);
+	
+}

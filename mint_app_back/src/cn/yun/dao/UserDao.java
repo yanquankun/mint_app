@@ -1,12 +1,17 @@
 package cn.yun.dao;
 
+import java.util.Map;
+
 import org.springframework.stereotype.Repository;
 
 import cn.yun.dto.TLoginUser;
+import cn.yun.dto.TUser;
 
 @Repository("userDao")
 public interface UserDao {
 
 	public TLoginUser getUserByUsername(String username);
+	
+	public TUser regisUsers(Map<String, Object> params);
 	
 }
