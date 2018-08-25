@@ -6,9 +6,15 @@
 
 ``` bash
 创建于mint(闫全堃)
-该移动端项目仅为自娱自乐
+该移动端项目仅为自娱自乐，有想学习vuex和springmvc的小盆友可以参考
 前端使用技术为vue+vuex+vue-router+mint-ui+axios
-后端使用技术为mysql+springmvc(正在研发中)
+后端使用技术为mysql+springmvc
+
+#项目启动
+我的git仓库db文件夹中会有mysql的脚本，可用来创建数据库表
+推荐使用myeclipse编辑器打开后台工程，可以直接用内置的tomcat启动服务，如果是前端编辑器，可在我的git上的目录为mintApp\.metadata\.me_tcat\webapps\mint_app_back里cmd打包生产war包，在本地tomcat中运行后台工程，打包war包
+的命令为（jar -cvf mint_app_back.war *）
+项目登录账户为mint密码mint
 # install dependencies
 npm install
 
