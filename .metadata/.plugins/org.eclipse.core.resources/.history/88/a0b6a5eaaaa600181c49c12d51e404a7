@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<!-- 使用该Mybatis与Spring整合的时候，该文件必须和相应的Mapper接口文件同名，并在同一路径下 --> 
+<mapper namespace="cn.yun.dao.UserDao">
+	
+		<select id="getAllUser" resultType="cn.yun.dto.TUser"  parameterType="java.util.Map">
+			select * from mint_users
+		</select>
+		
+		<select id="getLoginUser" resultType="cn.yun.dto.TLoginUser"  parameterType="java.util.Map">
+			select username, password from mint_users
+		</select>
+	
+</mapper>

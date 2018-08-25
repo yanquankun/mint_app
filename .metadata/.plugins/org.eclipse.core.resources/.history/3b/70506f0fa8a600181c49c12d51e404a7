@@ -1,0 +1,16 @@
+package cn.yun.controller;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+
+
+public class login {
+	/*public static void main(String[] args) {
+		
+	}*/
+	@RequestMapping("/login") 
+	public String login(HttpServletRequest request) {
+		return "/login";
+	}
+}

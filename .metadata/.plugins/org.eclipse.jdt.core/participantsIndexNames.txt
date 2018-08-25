@@ -1,0 +1,3 @@
+INDEX VERSION 1.126
+D:\Work\mintApp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2937133214.index
+\mint_app_back\src

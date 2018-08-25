@@ -1,0 +1,12 @@
+package cn.yun.dao;
+
+import org.springframework.stereotype.Repository;
+
+import com.sun.xml.internal.bind.v2.schemagen.xmlschema.List;
+
+import cn.yun.dto.TUser;
+
+@Repository("UserDao")
+public interface UserDap {
+	public List<TUser> getAllUsers();
+}

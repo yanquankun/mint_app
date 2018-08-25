@@ -1,0 +1,32 @@
+package cn.yun.controller;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+
+import org.apache.shiro.authz.annotation.RequiresAuthentication;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import cn.yun.dto.TUser;
+import cn.yun.service.UserService;
+
+@RequiresAuthentication
+@Controller
+@RequestMapping("/User")
+public class UserController{
+	@Resource(name = "userservice")
+	private UserService userService;
+	
+	@ResponseBody
+	@RequestMapping("/login")
+	public String GetAllUsers(HttpServletRequest request){
+		
+		
+		return null;
+	}
+}

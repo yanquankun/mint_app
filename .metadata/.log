@@ -1,0 +1,1041 @@
+!SESSION 2018-08-23 10:06:54.252 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_13
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -data D:\Work\mintApp -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2018-08-23 10:07:12.295
+!MESSAGE Installed snippet library: D:\myeclipse\MyEclipse 10\configuration\org.eclipse.osgi\bundles\134\1\.cp\snippets\html\css_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2018-08-23 10:07:12.351
+!MESSAGE Installed snippet library: D:\myeclipse\MyEclipse 10\configuration\org.eclipse.osgi\bundles\134\1\.cp\snippets\html\forms_lists_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2018-08-23 10:07:12.381
+!MESSAGE Installed snippet library: D:\myeclipse\MyEclipse 10\configuration\org.eclipse.osgi\bundles\134\1\.cp\snippets\html\htmlform_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2018-08-23 10:07:12.412
+!MESSAGE Installed snippet library: D:\myeclipse\MyEclipse 10\configuration\org.eclipse.osgi\bundles\134\1\.cp\snippets\html\html_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2018-08-23 10:07:12.462
+!MESSAGE Installed snippet library: D:\myeclipse\MyEclipse 10\configuration\org.eclipse.osgi\bundles\134\1\.cp\snippets\html\javascript_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2018-08-23 10:07:12.485
+!MESSAGE Installed snippet library: D:\myeclipse\MyEclipse 10\configuration\org.eclipse.osgi\bundles\134\1\.cp\snippets\jsp\jsf_f_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2018-08-23 10:07:12.521
+!MESSAGE Installed snippet library: D:\myeclipse\MyEclipse 10\configuration\org.eclipse.osgi\bundles\134\1\.cp\snippets\jsp\jsf_h_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2018-08-23 10:07:12.548
+!MESSAGE Installed snippet library: D:\myeclipse\MyEclipse 10\configuration\org.eclipse.osgi\bundles\134\1\.cp\snippets\jsp\struts_bean_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2018-08-23 10:07:12.585
+!MESSAGE Installed snippet library: D:\myeclipse\MyEclipse 10\configuration\org.eclipse.osgi\bundles\134\1\.cp\snippets\jsp\struts_html_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2018-08-23 10:07:12.614
+!MESSAGE Installed snippet library: D:\myeclipse\MyEclipse 10\configuration\org.eclipse.osgi\bundles\134\1\.cp\snippets\jsp\struts_logic_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2018-08-23 10:07:12.644
+!MESSAGE Installed snippet library: D:\myeclipse\MyEclipse 10\configuration\org.eclipse.osgi\bundles\134\1\.cp\snippets\jsp\struts_tiles_snippets.xml
+
+!ENTRY org.eclipse.osgi 2 0 2018-08-23 10:08:59.330
+!MESSAGE While loading class "org.eclipse.wst.jsdt.internal.core.JavaModelManager$16", thread "Thread[Worker-4,5,main]" timed out waiting (5003ms) for thread "Thread[main,6,main]" to finish starting bundle "org.eclipse.wst.jsdt.core_1.1.100.me201207241813 [984]". To avoid deadlock, thread "Thread[Worker-4,5,main]" is proceeding but "org.eclipse.wst.jsdt.internal.core.JavaModelManager$16" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:/D:/myeclipse/Common/plugins/org.eclipse.wst.jsdt.core_1.1.100.me201207241813.jar" by thread "main".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.eclipse.wst.jsdt.internal.core.JavaModelManager$15.run(JavaModelManager.java:4182)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 16 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.eclipse.wst.jsdt.internal.core.JavaModelManager$15.run(JavaModelManager.java:4182)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.wst.common.project.facet.core 2 0 2018-08-23 10:09:12.013
+!MESSAGE More than one declaration found for action type UNINSTALL of projet facet java 1.5.
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2018-08-23 10:29:25.673
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for serviceui [in serviceui.class [in sun.print.resources [in D:\myeclipse\Common\binary\com.sun.java.jdk.win32.x86_64_1.6.0.013\jre\lib\rt.jar]]]]
+	at org.eclipse.jdt.internal.core.JavadocContents.getTypeDoc(JavadocContents.java:77)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:997)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:462)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2018-08-23 10:29:25.674
+!MESSAGE Unknown javadoc format for serviceui [in serviceui.class [in sun.print.resources [in D:\myeclipse\Common\binary\com.sun.java.jdk.win32.x86_64_1.6.0.013\jre\lib\rt.jar]]]
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.056
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/ClusterCommandExecutor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.061
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/jedis/JedisClusterServerCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.066
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/jedis/JedisClusterStringCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.072
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceClusterServerCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.077
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceGeoCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.081
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettucePoolingConnectionProvider.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.086
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceReactiveClusterServerCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.090
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceReactiveGeoCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.095
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceReactiveRedisConnection.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.100
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceReactiveZSetCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.104
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceStringCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.110
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/RedisPassword.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.116
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/core/DefaultListOperations.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.121
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/core/RedisKeyValueTemplate$1.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.128
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/convert/SetConverter.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.133
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/jedis/JedisClusterKeyCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.138
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/jedis/JedisConverters.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.143
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/jedis/JedisResult.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.148
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceClusterKeyCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.154
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceConverters.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.160
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceReactiveRedisClusterConnection.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.165
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceReactiveSetCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.171
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceSetCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.177
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/ReactiveListCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.183
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/core/DefaultReactiveValueOperations.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.190
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/listener/RedisMessageListenerContainer.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.197
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/repository/cdi/RedisRepositoryBean.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.203
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/cache/DefaultRedisCacheWriter.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.208
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/ClusterCommandExecutionFailureException.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.213
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/convert/MapConverter.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.219
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/FutureResult.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.226
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceClusterConnection.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.232
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceReactiveClusterKeyCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.238
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceReactiveClusterZSetCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.243
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceReactiveNumberCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.249
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceReactiveScriptingCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.254
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceResult$LettuceResultBuilder.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.259
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/ReactiveGeoCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.265
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/ReactiveStringCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.273
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/core/DefaultHashOperations.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.278
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/core/DefaultReactiveZSetOperations.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.285
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/cache/RedisCache.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.291
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/jedis/JedisClusterConnection.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.296
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/jedis/JedisStringCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.301
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceReactiveClusterHyperLogLogCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.307
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceReactiveClusterStringCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.312
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceReactiveHashCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.317
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceReactiveZSetCommands$ArgumentConverters.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.323
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/ReactiveHyperLogLogCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.328
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/RedisSentinelConfiguration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.334
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/core/DefaultGeoOperations.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.339
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/core/DefaultReactiveListOperations.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.344
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/core/ReactiveRedisTemplate.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.350
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/core/RedisKeyValueAdapter$MappingExpirationListener.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.356
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/cache/RedisCacheConfiguration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.362
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/jedis/JedisClusterListCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.367
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceReactiveHyperLogLogCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.372
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceReactiveRedisConnection$AsyncConnect.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.377
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceResult.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.382
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/ReactiveZSetCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.387
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/RedisStandaloneConfiguration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.393
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/core/convert/MappingRedisConverter.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.397
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/core/convert/ReferenceResolverImpl.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.402
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/core/DefaultReactiveHyperLogLogOperations.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.407
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/core/DefaultValueOperations.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.411
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/core/mapping/RedisMappingContext$ConfigAwareTimeToLiveAccessor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.425
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/core/RedisTemplate.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.430
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/listener/adapter/MessageListenerAdapter$MethodInvoker.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.436
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/cache/RedisCacheManager$RedisCacheManagerBuilder.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.440
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/ClusterSlotHashUtil.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.446
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/jedis/JedisClusterSetCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.451
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceClusterSetCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.456
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceConnection.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.460
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceReactiveClusterListCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.465
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceReactiveListCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.469
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/ReactiveHashCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.474
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/ReactiveNumberCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.480
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/core/DefaultClusterOperations.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.485
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/core/DefaultReactiveHashOperations.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.489
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/core/DefaultSetOperations.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.494
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/core/RedisQueryEngine.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.499
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/core/script/DefaultReactiveScriptExecutor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.505
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/cache/RedisCacheManager.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.511
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/DefaultStringRedisConnection.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.515
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/jedis/JedisResult$JedisResultBuilder.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.520
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceClusterListCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.526
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceReactiveClusterSetCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.531
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceReactiveStringCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.536
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/ReactiveSetCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.542
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/core/DefaultHyperLogLogOperations.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.547
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/core/DefaultReactiveSetOperations.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.552
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/core/RedisKeyValueAdapter.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.558
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/support/collections/DefaultRedisZSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.563
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/convert/Converters.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.568
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/jedis/JedisConnectionFactory.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.573
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/jedis/JedisSetCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.578
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceConnectionFactory.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.583
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceReactiveClusterServerCommands$PropertiesCollector.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.587
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceReactiveKeyCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.591
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceReactiveServerCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.597
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/ReactiveKeyCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.603
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/core/DefaultReactiveGeoOperations.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.608
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/core/DefaultZSetOperations.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-23 12:01:10.613
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/core/script/DefaultScriptExecutor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2018-08-23 12:02:02.337
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for plain [in plain.class [in sun.net.www.content.text [in D:\myeclipse\Common\binary\com.sun.java.jdk.win32.x86_64_1.6.0.013\jre\lib\rt.jar]]]]
+	at org.eclipse.jdt.internal.core.JavadocContents.getTypeDoc(JavadocContents.java:77)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:997)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:462)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2018-08-23 12:02:02.337
+!MESSAGE Unknown javadoc format for plain [in plain.class [in sun.net.www.content.text [in D:\myeclipse\Common\binary\com.sun.java.jdk.win32.x86_64_1.6.0.013\jre\lib\rt.jar]]]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2018-08-23 12:02:18.826
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for HttpsConfigurator [in HttpsConfigurator.class [in com.sun.net.httpserver [in D:\myeclipse\Common\binary\com.sun.java.jdk.win32.x86_64_1.6.0.013\jre\lib\rt.jar]]]]
+	at org.eclipse.jdt.internal.core.JavadocContents.getTypeDoc(JavadocContents.java:77)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:997)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:462)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2018-08-23 12:02:18.826
+!MESSAGE Unknown javadoc format for HttpsConfigurator [in HttpsConfigurator.class [in com.sun.net.httpserver [in D:\myeclipse\Common\binary\com.sun.java.jdk.win32.x86_64_1.6.0.013\jre\lib\rt.jar]]]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2018-08-23 12:02:19.014
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for HttpServer [in HttpServer.class [in com.sun.net.httpserver [in D:\myeclipse\Common\binary\com.sun.java.jdk.win32.x86_64_1.6.0.013\jre\lib\rt.jar]]]]
+	at org.eclipse.jdt.internal.core.JavadocContents.getTypeDoc(JavadocContents.java:77)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:997)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:462)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2018-08-23 12:02:19.014
+!MESSAGE Unknown javadoc format for HttpServer [in HttpServer.class [in com.sun.net.httpserver [in D:\myeclipse\Common\binary\com.sun.java.jdk.win32.x86_64_1.6.0.013\jre\lib\rt.jar]]]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2018-08-23 12:02:27.660
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for HttpServlet [in HttpServlet.class [in javax.servlet.http [in D:\myeclipse\Common\plugins\com.genuitec.eclipse.j2eedt.core_10.5.0.me201207171805\data\libraryset\EE_5\javaee.jar]]]]
+	at org.eclipse.jdt.internal.core.JavadocContents.getTypeDoc(JavadocContents.java:77)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:997)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:462)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2018-08-23 12:02:27.660
+!MESSAGE Unknown javadoc format for HttpServlet [in HttpServlet.class [in javax.servlet.http [in D:\myeclipse\Common\plugins\com.genuitec.eclipse.j2eedt.core_10.5.0.me201207171805\data\libraryset\EE_5\javaee.jar]]]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2018-08-23 12:02:32.857
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for HttpServletRequest [in HttpServletRequest.class [in javax.servlet.http [in D:\myeclipse\Common\plugins\com.genuitec.eclipse.j2eedt.core_10.5.0.me201207171805\data\libraryset\EE_5\javaee.jar]]]]
+	at org.eclipse.jdt.internal.core.JavadocContents.getTypeDoc(JavadocContents.java:77)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:997)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:462)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2018-08-23 12:02:32.857
+!MESSAGE Unknown javadoc format for HttpServletRequest [in HttpServletRequest.class [in javax.servlet.http [in D:\myeclipse\Common\plugins\com.genuitec.eclipse.j2eedt.core_10.5.0.me201207171805\data\libraryset\EE_5\javaee.jar]]]
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2018-08-23 13:33:21.499
+!MESSAGE Unable to update index for central|http://repo1.maven.org/maven2
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2018-08-23 14:34:33.977
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for serviceui [in serviceui.class [in sun.print.resources [in D:\myeclipse\Common\binary\com.sun.java.jdk.win32.x86_64_1.6.0.013\jre\lib\rt.jar]]]]
+	at org.eclipse.jdt.internal.core.JavadocContents.getTypeDoc(JavadocContents.java:77)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:997)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:462)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2018-08-23 14:34:33.977
+!MESSAGE Unknown javadoc format for serviceui [in serviceui.class [in sun.print.resources [in D:\myeclipse\Common\binary\com.sun.java.jdk.win32.x86_64_1.6.0.013\jre\lib\rt.jar]]]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2018-08-23 14:36:18.515
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for plain [in plain.class [in sun.net.www.content.text [in D:\myeclipse\Common\binary\com.sun.java.jdk.win32.x86_64_1.6.0.013\jre\lib\rt.jar]]]]
+	at org.eclipse.jdt.internal.core.JavadocContents.getTypeDoc(JavadocContents.java:77)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:997)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:462)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2018-08-23 14:36:18.515
+!MESSAGE Unknown javadoc format for plain [in plain.class [in sun.net.www.content.text [in D:\myeclipse\Common\binary\com.sun.java.jdk.win32.x86_64_1.6.0.013\jre\lib\rt.jar]]]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2018-08-23 14:36:45.173
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for serviceui [in serviceui.class [in sun.print.resources [in D:\myeclipse\Common\binary\com.sun.java.jdk.win32.x86_64_1.6.0.013\jre\lib\rt.jar]]]]
+	at org.eclipse.jdt.internal.core.JavadocContents.getTypeDoc(JavadocContents.java:77)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:997)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:462)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2018-08-23 14:36:45.173
+!MESSAGE Unknown javadoc format for serviceui [in serviceui.class [in sun.print.resources [in D:\myeclipse\Common\binary\com.sun.java.jdk.win32.x86_64_1.6.0.013\jre\lib\rt.jar]]]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2018-08-23 14:36:55.809
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for plain [in plain.class [in sun.net.www.content.text [in D:\myeclipse\Common\binary\com.sun.java.jdk.win32.x86_64_1.6.0.013\jre\lib\rt.jar]]]]
+	at org.eclipse.jdt.internal.core.JavadocContents.getTypeDoc(JavadocContents.java:77)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:997)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:462)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2018-08-23 14:36:55.809
+!MESSAGE Unknown javadoc format for plain [in plain.class [in sun.net.www.content.text [in D:\myeclipse\Common\binary\com.sun.java.jdk.win32.x86_64_1.6.0.013\jre\lib\rt.jar]]]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2018-08-23 15:13:26.708
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for List [in List.class [in com.sun.xml.internal.bind.v2.schemagen.xmlschema [in D:\myeclipse\Common\binary\com.sun.java.jdk.win32.x86_64_1.6.0.013\jre\lib\rt.jar]]]]
+	at org.eclipse.jdt.internal.core.JavadocContents.getTypeDoc(JavadocContents.java:77)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:997)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:462)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2018-08-23 15:13:26.708
+!MESSAGE Unknown javadoc format for List [in List.class [in com.sun.xml.internal.bind.v2.schemagen.xmlschema [in D:\myeclipse\Common\binary\com.sun.java.jdk.win32.x86_64_1.6.0.013\jre\lib\rt.jar]]]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2018-08-23 15:17:40.464
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for SecondaryTable [in SecondaryTable.class [in javax.persistence [in D:\myeclipse\Common\plugins\com.genuitec.eclipse.j2eedt.core_10.5.0.me201207171805\data\libraryset\EE_5\javaee.jar]]]]
+	at org.eclipse.jdt.internal.core.JavadocContents.getTypeDoc(JavadocContents.java:77)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:997)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:462)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2018-08-23 15:17:40.464
+!MESSAGE Unknown javadoc format for SecondaryTable [in SecondaryTable.class [in javax.persistence [in D:\myeclipse\Common\plugins\com.genuitec.eclipse.j2eedt.core_10.5.0.me201207171805\data\libraryset\EE_5\javaee.jar]]]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2018-08-23 15:34:42.088
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for HttpServletRequest [in HttpServletRequest.class [in javax.servlet.http [in D:\myeclipse\Common\plugins\com.genuitec.eclipse.j2eedt.core_10.5.0.me201207171805\data\libraryset\EE_5\javaee.jar]]]]
+	at org.eclipse.jdt.internal.core.JavadocContents.getTypeDoc(JavadocContents.java:77)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:997)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:462)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2018-08-23 15:34:42.089
+!MESSAGE Unknown javadoc format for HttpServletRequest [in HttpServletRequest.class [in javax.servlet.http [in D:\myeclipse\Common\plugins\com.genuitec.eclipse.j2eedt.core_10.5.0.me201207171805\data\libraryset\EE_5\javaee.jar]]]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2018-08-23 15:35:37.185
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for JSAdapter [in JSAdapter.class [in com.sun.script.javascript [in D:\myeclipse\Common\binary\com.sun.java.jdk.win32.x86_64_1.6.0.013\jre\lib\rt.jar]]]]
+	at org.eclipse.jdt.internal.core.JavadocContents.getTypeDoc(JavadocContents.java:77)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:997)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:462)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2018-08-23 15:35:37.185
+!MESSAGE Unknown javadoc format for JSAdapter [in JSAdapter.class [in com.sun.script.javascript [in D:\myeclipse\Common\binary\com.sun.java.jdk.win32.x86_64_1.6.0.013\jre\lib\rt.jar]]]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2018-08-23 15:42:22.444
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for HttpServletRequest [in HttpServletRequest.class [in javax.servlet.http [in D:\myeclipse\Common\plugins\com.genuitec.eclipse.j2eedt.core_10.5.0.me201207171805\data\libraryset\EE_5\javaee.jar]]]]
+	at org.eclipse.jdt.internal.core.JavadocContents.getTypeDoc(JavadocContents.java:77)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:997)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:462)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:621)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:567)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:559)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:142)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:85)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2018-08-23 15:42:22.444
+!MESSAGE Unknown javadoc format for HttpServletRequest [in HttpServletRequest.class [in javax.servlet.http [in D:\myeclipse\Common\plugins\com.genuitec.eclipse.j2eedt.core_10.5.0.me201207171805\data\libraryset\EE_5\javaee.jar]]]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2018-08-23 16:07:50.447
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for plain [in plain.class [in sun.net.www.content.text [in D:\myeclipse\Common\binary\com.sun.java.jdk.win32.x86_64_1.6.0.013\jre\lib\rt.jar]]]]
+	at org.eclipse.jdt.internal.core.JavadocContents.getTypeDoc(JavadocContents.java:77)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:997)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:462)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2018-08-23 16:07:50.447
+!MESSAGE Unknown javadoc format for plain [in plain.class [in sun.net.www.content.text [in D:\myeclipse\Common\binary\com.sun.java.jdk.win32.x86_64_1.6.0.013\jre\lib\rt.jar]]]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2018-08-23 16:07:52.229
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for Password [in Password.class [in sun.security.util [in D:\myeclipse\Common\binary\com.sun.java.jdk.win32.x86_64_1.6.0.013\jre\lib\rt.jar]]]]
+	at org.eclipse.jdt.internal.core.JavadocContents.getTypeDoc(JavadocContents.java:77)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:997)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:462)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2018-08-23 16:07:52.229
+!MESSAGE Unknown javadoc format for Password [in Password.class [in sun.security.util [in D:\myeclipse\Common\binary\com.sun.java.jdk.win32.x86_64_1.6.0.013\jre\lib\rt.jar]]]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2018-08-23 16:22:44.352
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for JSAdapter [in JSAdapter.class [in com.sun.script.javascript [in D:\myeclipse\Common\binary\com.sun.java.jdk.win32.x86_64_1.6.0.013\jre\lib\rt.jar]]]]
+	at org.eclipse.jdt.internal.core.JavadocContents.getTypeDoc(JavadocContents.java:77)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:997)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:462)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2018-08-23 16:22:44.352
+!MESSAGE Unknown javadoc format for JSAdapter [in JSAdapter.class [in com.sun.script.javascript [in D:\myeclipse\Common\binary\com.sun.java.jdk.win32.x86_64_1.6.0.013\jre\lib\rt.jar]]]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2018-08-23 16:22:45.400
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for J2eeApplicationObject [in J2eeApplicationObject.class [in javax.enterprise.deploy.model [in D:\myeclipse\Common\plugins\com.genuitec.eclipse.j2eedt.core_10.5.0.me201207171805\data\libraryset\EE_5\javaee.jar]]]]
+	at org.eclipse.jdt.internal.core.JavadocContents.getTypeDoc(JavadocContents.java:77)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:997)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:462)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2018-08-23 16:22:45.400
+!MESSAGE Unknown javadoc format for J2eeApplicationObject [in J2eeApplicationObject.class [in javax.enterprise.deploy.model [in D:\myeclipse\Common\plugins\com.genuitec.eclipse.j2eedt.core_10.5.0.me201207171805\data\libraryset\EE_5\javaee.jar]]]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2018-08-23 16:39:01.880
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for HttpServletRequest [in HttpServletRequest.class [in javax.servlet.http [in D:\myeclipse\Common\plugins\com.genuitec.eclipse.j2eedt.core_10.5.0.me201207171805\data\libraryset\EE_5\javaee.jar]]]]
+	at org.eclipse.jdt.internal.core.JavadocContents.getTypeDoc(JavadocContents.java:77)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:997)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:462)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:621)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:567)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:559)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:142)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:85)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2018-08-23 16:39:01.880
+!MESSAGE Unknown javadoc format for HttpServletRequest [in HttpServletRequest.class [in javax.servlet.http [in D:\myeclipse\Common\plugins\com.genuitec.eclipse.j2eedt.core_10.5.0.me201207171805\data\libraryset\EE_5\javaee.jar]]]
+
+!ENTRY org.eclipse.ui 4 4 2018-08-23 17:20:27.506
+!MESSAGE Part already exists in page layout: org.eclipse.debug.ui.ExpressionView.
+!SESSION 2018-08-24 08:54:59.755 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_13
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -data D:\Work\mintApp -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.genuitec.eclipse.core.common 1 0 2018-08-24 08:55:12.257
+!MESSAGE ClasspathContainer requery for classpath-string: com.genuitec.eclipse.j2eedt.core
+
+!ENTRY org.eclipse.osgi 2 0 2018-08-24 08:55:19.411
+!MESSAGE While loading class "org.eclipse.wst.jsdt.internal.core.JavaModelManager$16", thread "Thread[Worker-3,5,main]" timed out waiting (5002ms) for thread "Thread[Worker-12,5,main]" to finish starting bundle "org.eclipse.wst.jsdt.core_1.1.100.me201207241813 [984]". To avoid deadlock, thread "Thread[Worker-3,5,main]" is proceeding but "org.eclipse.wst.jsdt.internal.core.JavaModelManager$16" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:/D:/myeclipse/Common/plugins/org.eclipse.wst.jsdt.core_1.1.100.me201207241813.jar" by thread "Worker-12".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.eclipse.wst.jsdt.internal.core.JavaModelManager$15.run(JavaModelManager.java:4182)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 16 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.eclipse.wst.jsdt.internal.core.JavaModelManager$15.run(JavaModelManager.java:4182)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.contenttype 4 0 2018-08-24 08:55:26.450
+!MESSAGE Could not create content describer for com.genuitec.eclipse.editor.webapp22. Content type has been disabled.
+!STACK 0
+java.util.ConcurrentModificationException
+	at java.util.AbstractList$Itr.checkForComodification(AbstractList.java:372)
+	at java.util.AbstractList$Itr.next(AbstractList.java:343)
+	at com.genuitec.eclipse.editor.core.content.ContentVersionDescriber.describe(ContentVersionDescriber.java:51)
+	at com.genuitec.eclipse.editor.core.content.XMLFileContentDescriber.contentsOk(XMLFileContentDescriber.java:58)
+	at com.genuitec.eclipse.editor.core.content.XMLFileContentDescriber.describe(XMLFileContentDescriber.java:39)
+	at org.eclipse.core.internal.content.ContentTypeCatalog.describe(ContentTypeCatalog.java:218)
+	at org.eclipse.core.internal.content.ContentTypeCatalog.collectMatchingByContents(ContentTypeCatalog.java:190)
+	at org.eclipse.core.internal.content.ContentTypeCatalog.internalFindContentTypesFor(ContentTypeCatalog.java:401)
+	at org.eclipse.core.internal.content.ContentTypeCatalog.internalFindContentTypesFor(ContentTypeCatalog.java:450)
+	at org.eclipse.core.internal.content.ContentTypeCatalog.getDescriptionFor(ContentTypeCatalog.java:346)
+	at org.eclipse.core.internal.content.ContentTypeCatalog.getDescriptionFor(ContentTypeCatalog.java:360)
+	at org.eclipse.core.internal.content.ContentTypeMatcher.getDescriptionFor(ContentTypeMatcher.java:86)
+	at org.eclipse.core.internal.resources.ContentDescriptionManager.readDescription(ContentDescriptionManager.java:445)
+	at org.eclipse.core.internal.resources.ContentDescriptionManager.getDescriptionFor(ContentDescriptionManager.java:355)
+	at org.eclipse.core.internal.resources.File.getContentDescription(File.java:271)
+	at org.eclipse.ui.internal.ide.ContentTypeDecorator.decorate(ContentTypeDecorator.java:47)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:269)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:81)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:347)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:370)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:330)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2018-08-24 14:27:57.893
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for HttpServletRequest {key=Ljavax/servlet/http/HttpServletRequest;} [in HttpServletRequest.class [in javax.servlet.http [in D:\myeclipse\Common\plugins\com.genuitec.eclipse.j2eedt.core_10.5.0.me201207171805\data\libraryset\EE_5\javaee.jar]]]]
+	at org.eclipse.jdt.internal.core.JavadocContents.getTypeDoc(JavadocContents.java:77)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:997)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:462)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:621)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:567)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:559)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:142)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:85)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2018-08-24 14:27:57.893
+!MESSAGE Unknown javadoc format for HttpServletRequest {key=Ljavax/servlet/http/HttpServletRequest;} [in HttpServletRequest.class [in javax.servlet.http [in D:\myeclipse\Common\plugins\com.genuitec.eclipse.j2eedt.core_10.5.0.me201207171805\data\libraryset\EE_5\javaee.jar]]]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2018-08-24 15:47:44.050
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for HttpServletRequest {key=Ljavax/servlet/http/HttpServletRequest;} [in HttpServletRequest.class [in javax.servlet.http [in D:\myeclipse\Common\plugins\com.genuitec.eclipse.j2eedt.core_10.5.0.me201207171805\data\libraryset\EE_5\javaee.jar]]]]
+	at org.eclipse.jdt.internal.core.JavadocContents.getTypeDoc(JavadocContents.java:77)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:997)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:462)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:621)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:567)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:559)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:142)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:85)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2018-08-24 15:47:44.050
+!MESSAGE Unknown javadoc format for HttpServletRequest {key=Ljavax/servlet/http/HttpServletRequest;} [in HttpServletRequest.class [in javax.servlet.http [in D:\myeclipse\Common\plugins\com.genuitec.eclipse.j2eedt.core_10.5.0.me201207171805\data\libraryset\EE_5\javaee.jar]]]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2018-08-24 16:04:33.343
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for HttpServletRequest {key=Ljavax/servlet/http/HttpServletRequest;} [in HttpServletRequest.class [in javax.servlet.http [in D:\myeclipse\Common\plugins\com.genuitec.eclipse.j2eedt.core_10.5.0.me201207171805\data\libraryset\EE_5\javaee.jar]]]]
+	at org.eclipse.jdt.internal.core.JavadocContents.getTypeDoc(JavadocContents.java:77)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:997)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:462)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2018-08-24 16:04:33.343
+!MESSAGE Unknown javadoc format for HttpServletRequest {key=Ljavax/servlet/http/HttpServletRequest;} [in HttpServletRequest.class [in javax.servlet.http [in D:\myeclipse\Common\plugins\com.genuitec.eclipse.j2eedt.core_10.5.0.me201207171805\data\libraryset\EE_5\javaee.jar]]]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2018-08-24 16:11:12.768
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for HttpServletRequest {key=Ljavax/servlet/http/HttpServletRequest;} [in HttpServletRequest.class [in javax.servlet.http [in D:\myeclipse\Common\plugins\com.genuitec.eclipse.j2eedt.core_10.5.0.me201207171805\data\libraryset\EE_5\javaee.jar]]]]
+	at org.eclipse.jdt.internal.core.JavadocContents.getTypeDoc(JavadocContents.java:77)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:997)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:462)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:621)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:567)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:559)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:142)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:85)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2018-08-24 16:11:12.768
+!MESSAGE Unknown javadoc format for HttpServletRequest {key=Ljavax/servlet/http/HttpServletRequest;} [in HttpServletRequest.class [in javax.servlet.http [in D:\myeclipse\Common\plugins\com.genuitec.eclipse.j2eedt.core_10.5.0.me201207171805\data\libraryset\EE_5\javaee.jar]]]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2018-08-24 16:11:32.205
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for HttpServletRequest {key=Ljavax/servlet/http/HttpServletRequest;} [in HttpServletRequest.class [in javax.servlet.http [in D:\myeclipse\Common\plugins\com.genuitec.eclipse.j2eedt.core_10.5.0.me201207171805\data\libraryset\EE_5\javaee.jar]]]]
+	at org.eclipse.jdt.internal.core.JavadocContents.getTypeDoc(JavadocContents.java:77)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:997)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:462)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:621)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:567)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:559)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:142)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:85)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2018-08-24 16:11:32.205
+!MESSAGE Unknown javadoc format for HttpServletRequest {key=Ljavax/servlet/http/HttpServletRequest;} [in HttpServletRequest.class [in javax.servlet.http [in D:\myeclipse\Common\plugins\com.genuitec.eclipse.j2eedt.core_10.5.0.me201207171805\data\libraryset\EE_5\javaee.jar]]]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2018-08-24 16:24:34.784
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for Cookie [in Cookie.class [in javax.servlet.http [in D:\myeclipse\Common\plugins\com.genuitec.eclipse.j2eedt.core_10.5.0.me201207171805\data\libraryset\EE_5\javaee.jar]]]]
+	at org.eclipse.jdt.internal.core.JavadocContents.getTypeDoc(JavadocContents.java:77)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:997)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:462)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2018-08-24 16:24:34.784
+!MESSAGE Unknown javadoc format for Cookie [in Cookie.class [in javax.servlet.http [in D:\myeclipse\Common\plugins\com.genuitec.eclipse.j2eedt.core_10.5.0.me201207171805\data\libraryset\EE_5\javaee.jar]]]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2018-08-24 17:25:08.983
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for serviceui [in serviceui.class [in sun.print.resources [in D:\myeclipse\Common\binary\com.sun.java.jdk.win32.x86_64_1.6.0.013\jre\lib\rt.jar]]]]
+	at org.eclipse.jdt.internal.core.JavadocContents.getTypeDoc(JavadocContents.java:77)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:997)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:462)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2018-08-24 17:25:08.984
+!MESSAGE Unknown javadoc format for serviceui [in serviceui.class [in sun.print.resources [in D:\myeclipse\Common\binary\com.sun.java.jdk.win32.x86_64_1.6.0.013\jre\lib\rt.jar]]]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2018-08-24 17:25:12.604
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for serviceui [in serviceui.class [in sun.print.resources [in D:\myeclipse\Common\binary\com.sun.java.jdk.win32.x86_64_1.6.0.013\jre\lib\rt.jar]]]]
+	at org.eclipse.jdt.internal.core.JavadocContents.getTypeDoc(JavadocContents.java:77)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:997)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:462)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2018-08-24 17:25:12.605
+!MESSAGE Unknown javadoc format for serviceui [in serviceui.class [in sun.print.resources [in D:\myeclipse\Common\binary\com.sun.java.jdk.win32.x86_64_1.6.0.013\jre\lib\rt.jar]]]
+!SESSION 2018-08-24 17:37:36.278 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_13
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2018-08-24 17:37:56.975
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.osgi 2 0 2018-08-24 17:38:05.931
+!MESSAGE While loading class "org.eclipse.wst.jsdt.internal.core.JavaModelManager$16", thread "Thread[Worker-5,5,main]" timed out waiting (5004ms) for thread "Thread[Worker-3,5,main]" to finish starting bundle "org.eclipse.wst.jsdt.core_1.1.100.me201207241813 [984]". To avoid deadlock, thread "Thread[Worker-5,5,main]" is proceeding but "org.eclipse.wst.jsdt.internal.core.JavaModelManager$16" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:/D:/myeclipse/Common/plugins/org.eclipse.wst.jsdt.core_1.1.100.me201207241813.jar" by thread "Worker-3".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.eclipse.wst.jsdt.internal.core.JavaModelManager$15.run(JavaModelManager.java:4182)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 16 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.eclipse.wst.jsdt.internal.core.JavaModelManager$15.run(JavaModelManager.java:4182)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SESSION 2018-08-25 10:04:38.658 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_13
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.osgi 2 0 2018-08-25 10:05:41.933
+!MESSAGE While loading class "org.eclipse.wst.jsdt.internal.core.JavaModelManager$16", thread "Thread[Worker-8,5,main]" timed out waiting (5003ms) for thread "Thread[Worker-6,5,main]" to finish starting bundle "org.eclipse.wst.jsdt.core_1.1.100.me201207241813 [984]". To avoid deadlock, thread "Thread[Worker-8,5,main]" is proceeding but "org.eclipse.wst.jsdt.internal.core.JavaModelManager$16" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:/D:/myeclipse/Common/plugins/org.eclipse.wst.jsdt.core_1.1.100.me201207241813.jar" by thread "Worker-6".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.eclipse.wst.jsdt.internal.core.JavaModelManager$15.run(JavaModelManager.java:4182)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 16 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.eclipse.wst.jsdt.internal.core.JavaModelManager$15.run(JavaModelManager.java:4182)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2018-08-25 10:52:01.848
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for jar [in jar.class [in sun.tools.jar.resources [in D:\myeclipse\Common\binary\com.sun.java.jdk.win32.x86_64_1.6.0.013\jre\lib\rt.jar]]]]
+	at org.eclipse.jdt.internal.core.JavadocContents.getTypeDoc(JavadocContents.java:77)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:997)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:462)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2018-08-25 10:52:01.848
+!MESSAGE Unknown javadoc format for jar [in jar.class [in sun.tools.jar.resources [in D:\myeclipse\Common\binary\com.sun.java.jdk.win32.x86_64_1.6.0.013\jre\lib\rt.jar]]]

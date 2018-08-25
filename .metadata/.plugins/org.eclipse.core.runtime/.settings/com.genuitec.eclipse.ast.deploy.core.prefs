@@ -1,0 +1,13 @@
+eclipse.preferences.version=1
+myeclipseTomcatServer.mint_app_back.IEARProjectName=
+myeclipseTomcatServer.mint_app_back.altContextRoot=
+myeclipseTomcatServer.mint_app_back.contextRoot=/mint_app_back
+myeclipseTomcatServer.mint_app_back.deployIsOverProject=false
+myeclipseTomcatServer.mint_app_back.deploymentPath=D\:\\Work\\mintApp\\.metadata\\.me_tcat\\webapps\\mint_app_back
+myeclipseTomcatServer.mint_app_back.isDeployed=true
+myeclipseTomcatServer.mint_app_back.isExploded=true
+myeclipseTomcatServer.mint_app_back.isUptoDate=true
+myeclipseTomcatServer.mint_app_back.noFileCopy=false
+myeclipseTomcatServer.mint_app_back.shouldBackup=false
+myeclipseTomcatServer.mint_app_back.shouldOverwrite=false
+myeclipseTomcatServer.mint_app_back.type=WebDeployment
