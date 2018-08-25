@@ -1,6 +1,6 @@
 <template>
     <div class="login_web">
-      <mt-header title="MINT_APP 登录" >
+      <mt-header title="MINT 登录" >
         <router-link to="/images" slot="left">
             <mt-button icon="back">个人相册</mt-button>
         </router-link>
@@ -78,17 +78,21 @@ export default {
         username: this.username,
         password: this.password
       });
-      if (this.LoginRes.success == "true") {
-        this.isLogin = true;
-        sessionStorage.setItem("getLogin", this.isLogin);
-        this.$router.push("/index");
-        this.password = null;
-        this.username = null;
-      } else {
-        this.isLogin = false;
-        sessionStorage.setItem("getLogin", this.isLogin);
-        Toast(this.LoginRes.msg);
-      }
+      let that = this;
+      let timer = setTimeout(() => {
+        if (that.LoginRes.success == "true") {
+          that.isLogin = true;
+          sessionStorage.setItem("getLogin", that.isLogin);
+          that.$router.push("/index");
+          that.password = null;
+          that.username = null;
+        } else {
+          that.isLogin = false;
+          sessionStorage.setItem("getLogin", that.isLogin);
+          Toast(that.LoginRes.msg);
+        }
+        clearTimeout(timer)
+      }, 100);
     },
     enterLogin() {
       let that = this;

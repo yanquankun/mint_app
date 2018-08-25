@@ -25,9 +25,13 @@ export default {
       password: null,
       phone: null,
       birthday: null,
-      guid: "",
-      regisResult: {}
+      guid: ""
     };
+  },
+  computed:{
+    regisResult:function(){
+      return this.$store.state.regisResult
+    }
   },
   methods: {
     sava() {
@@ -39,13 +43,16 @@ export default {
         phone: this.phone,
         birthday: this.birthday
       });
-      this.regisResult = this.$store.state.regisResult;
-      if (this.regisResult.code == 400) {
-        Toast(this.regisResult.success);
-      } else if (this.regisResult.code == 200) {
-        Toast(this.regisResult.success);
-        this.$router.push("/Login");
-      }
+      let that = this;
+      let timer = setTimeout(() => {
+        if (that.regisResult.code == 400) {
+          Toast(that.regisResult.success);
+        } else if (that.regisResult.code == 200) {
+          Toast(that.regisResult.success);
+          that.$router.push("/Login");
+        }
+        clearTimeout(timer);
+      }, 500);
     },
     newguid() {
       let guid = "";
