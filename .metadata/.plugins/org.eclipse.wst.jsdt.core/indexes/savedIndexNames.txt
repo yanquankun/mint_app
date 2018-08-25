@@ -1,7 +1,6 @@
 INDEX VERSION 1.122+D:\Work\mintApp\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
 4189593844.index
 1926229386.index
-3421248459.index
 1602478754.index
 2101928523.index
 3757421064.index

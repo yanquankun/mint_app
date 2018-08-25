@@ -100,7 +100,6 @@ public class UserController{
 				String json = JSONUtils.toJSONString(map);
 				return json;
 			}else {
-				code = 200;
 				success = "注册成功";
 			}
 		}else if(null != phone) {

@@ -10,6 +10,8 @@ export const getLogin = (context, args) => {
             }
         }).then(Response => {
             context.commit('getLogin', Response.data.result);
+        }).catch(function(err) {
+            console.log(err)
         })
 }
 
@@ -26,5 +28,7 @@ export const regisResult = (context, args) => {
             }
         }).then(Response => {
             context.commit('regisResult', Response.data.result);
+        }).catch(function(err) {
+            console.log(err)
         })
 }
