@@ -12,7 +12,10 @@ import './common.less'
 import axios from 'axios'
 // 引入vuex
 import store from './vuex/store'
+// 引入表单验证
+import Vuelidate from 'vuelidate'
 
+Vue.use(Vuelidate)
 Vue.use(MintUI)
 Vue.config.productionTip = false
 Vue.prototype.$http = axios

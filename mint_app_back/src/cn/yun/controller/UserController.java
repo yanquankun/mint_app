@@ -1,5 +1,5 @@
 package cn.yun.controller;
-
+import cn.common.controller.*;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -82,9 +82,38 @@ public class UserController{
 			return json;
 		}
 		TLoginUser userByUsername = userService.getUserByUsername(username);
-		if(null != userByUsername && userByUsername.username == username){
+		if(null != userByUsername && userByUsername.username.equals(username)){
 			code = 400;
 			success = "注册失败,用户已存在";
+			result.put("success", success);
+			result.put("code", code);
+	    	map.put("result", result);
+			String json = JSONUtils.toJSONString(map);
+			return json;
+		}else if(null != email){
+			code = 400;
+			if(!ValidateUtil.isValidEmail(email)){
+				success = "邮箱格式不对,请修改";
+				result.put("success", success);
+				result.put("code", code);
+		    	map.put("result", result);
+				String json = JSONUtils.toJSONString(map);
+				return json;
+			}else {
+				success = "注册成功";
+			}
+		}else if(null != phone) {
+			code = 400;
+			if(!ValidateUtil.isValidMobileNo(phone)){
+				success = "手机号格式不对,请修改";
+				result.put("success", success);
+				result.put("code", code);
+		    	map.put("result", result);
+				String json = JSONUtils.toJSONString(map);
+				return json;
+			}else {
+				success = "注册成功";
+			}
 		}else {
 			success = "注册成功";
 		}

@@ -6,16 +6,17 @@
             </router-link>
         </mt-header>
         <div class="lists">
-            <mt-field label="用户名" placeholder="请输入用户名" v-model="username"></mt-field>
+            <mt-field label="用户名" placeholder="请输入用户名" type="username" v-model="username"></mt-field>           
             <mt-field label="邮箱" placeholder="请输入邮箱" type="email" v-model="email"></mt-field>
             <mt-field label="密码" placeholder="请输入密码" type="password" v-model="password"></mt-field>
-            <mt-field label="手机号" placeholder="请输入手机号" type="tel" v-model="phone"></mt-field>
+            <mt-field label="手机号" placeholder="请输入手机号" type="number" v-model="phone"></mt-field>
             <mt-field label="生日" placeholder="请输入生日" type="date" v-model="birthday"></mt-field>
         </div>
         <mt-button class="sava" type="primary" @click="sava()">提交</mt-button>
     </div>
 </template>
 <script>
+import { Field, Toast } from "mint-ui";
 export default {
   data() {
     return {
@@ -25,23 +26,26 @@ export default {
       phone: null,
       birthday: null,
       guid: "",
-      users: {}
+      regisResult: {}
     };
   },
   methods: {
     sava() {
-      this.$http
-        .get("api/User/regis", {
-          params: {
-            guid: this.newguid(),
-            username: this.username,
-            email: this.email,
-            password: this.password,
-            phone: this.phone,
-            birthday: this.birthday
-          }
-        })
-        .then(response => {});
+      this.$store.dispatch("regisResult", {
+        guid: this.newguid(),
+        username: this.username,
+        email: this.email,
+        password: this.password,
+        phone: this.phone,
+        birthday: this.birthday
+      });
+      this.regisResult = this.$store.state.regisResult;
+      if (this.regisResult.code == 400) {
+        Toast(this.regisResult.success);
+      } else if (this.regisResult.code == 200) {
+        Toast(this.regisResult.success);
+        this.$router.push("/Login");
+      }
     },
     newguid() {
       let guid = "";

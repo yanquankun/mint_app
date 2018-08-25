@@ -10,8 +10,8 @@
 		<item value="667" key="DIALOG_WIDTH"/>
 		<item value="com.genuitec.eclipse.ast.deploy.core.serverview" key="ShowViewDialog.STORE_SELECTED_VIEW_ID"/>
 		<item value="595" key="DIALOG_Y_ORIGIN"/>
-		<item value="567" key="DIALOG_HEIGHT"/>
 		<item value="1180" key="DIALOG_X_ORIGIN"/>
+		<item value="567" key="DIALOG_HEIGHT"/>
 		<item value="1|Microsoft YaHei UI|9.0|0|WINDOWS|1|-24|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft YaHei UI" key="DIALOG_FONT_NAME"/>
 		<list key="ShowViewDialog.STORE_EXPANDED_CATEGORIES_ID">
 			<item value="com.genuitec.eclipse.views.myEclipseJEECategory"/>

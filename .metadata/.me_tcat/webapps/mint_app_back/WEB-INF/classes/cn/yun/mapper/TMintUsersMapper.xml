@@ -11,8 +11,8 @@
 		</select>
 		
 		<select id="regisUsers" resultType="cn.yun.dto.TUser"  parameterType="java.util.Map">
-			insert into mint_users
-			values(#{id}, #{guid}, #{username}, #{password}, #{phone}, #{email}, #{birthday});
+			insert into mint_users (id, guid, username, email, password, phone,  birthday)
+			values(#{id}, #{guid}, #{username}, #{email}, #{password}, #{phone},  #{birthday})
 		</select>
 	
 </mapper>
