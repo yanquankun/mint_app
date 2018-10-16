@@ -1,9 +1,9 @@
 <template>
     <div class="card_web" v-if="isCardshow" @click="clickMask()">
-      <div class="card_content" >
-          <header class="card_herder">{{cardTitle}}</header>
-          <div class="card_body" v-html="card_content"></div>
-      </div>
+        <div class="card_content">
+            <header class="card_herder">{{cardTitle}}</header>
+            <div class="card_body" v-html="card_content"></div>
+        </div>
     </div>
 </template>
 <script>

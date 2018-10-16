@@ -14,14 +14,18 @@ import axios from 'axios'
 import store from './vuex/store'
 // 引入表单验证
 import Vuelidate from 'vuelidate'
+// 引入vant
+import Vant from 'vant';
+import 'vant/lib/vant-css/index.css';
 
+Vue.use(Vant);
 Vue.use(Vuelidate)
 Vue.use(MintUI)
 Vue.config.productionTip = false
 Vue.prototype.$http = axios
 
 // 路由守卫
-const nextRoute = ['index'];
+const nextRoute = ['index', 'map'];
 router.beforeEach((to, from, next) => {
     let isLogin = sessionStorage.getItem("getLogin"); // 是否登录
     // 判断该路由是否需要登录权限
@@ -44,6 +48,8 @@ new Vue({
     el: '#app',
     router,
     store,
-    components: { App },
+    components: {
+        App
+    },
     template: '<App/>'
 })

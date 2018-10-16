@@ -1,4 +1,0 @@
-datasource.connection.url=jdbc\:mysql\://localhost/mint_ap?useUnicode\=true&characterEncoding\=utf8&autoReconnect\=true&failOverReadOnly\=false
-datasource.connection.driverclass=com.mysql.jdbc.Driver
-datasource.connection.username=root
-datasource.connection.password=localsense

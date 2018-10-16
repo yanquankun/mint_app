@@ -1,20 +1,21 @@
 <template>
     <div class="login_web">
-      <mt-header title="MINT 登录" >
-        <router-link to="/images" slot="left">
-            <mt-button icon="back">个人相册</mt-button>
-        </router-link>
-        <mt-button slot="right"  @click="introduce()">自我介绍</mt-button>
-      </mt-header>
+        <mt-header title="MINT 登录">
+            <router-link to="/images" slot="left">
+                <mt-button icon="back">个人相册</mt-button>
+            </router-link>
+            <mt-button slot="right" @click="introduce()">自我介绍</mt-button>
+        </mt-header>
         <card :cardTitle=cardTitle :card_content=myself_content :isCardshow=isCardshow></card>
-      <div class="login_content">
-        <div class="field">
-          <mt-field style="backgroundColor:rgb(86, 181, 212)" label="用户名" placeholder="请输入用户名" v-model="username" disableClear></mt-field>
-          <mt-field style="backgroundColor:rgb(86, 181, 212)" label="密码" placeholder="请输入密码" type="password" v-model="password" disableClear></mt-field>
-          <mt-button class="loginBtn" type="primary" @click="login()">登录</mt-button>
-          <mt-button class="regisBtn" plain @click="regis()">注册</mt-button>
+        <div class="login_content">
+            <div class="field">
+                <mt-field style="backgroundColor:rgb(86, 181, 212)" label="用户名" placeholder="请输入用户名" v-model="username" disableClear></mt-field>
+                <mt-field style="backgroundColor:rgb(86, 181, 212)" label="密码" @touchstart.native.stop="show = true" placeholder="请输入密码" type="password" v-model="password" disableClear></mt-field>
+                <mt-button class="loginBtn" type="primary" @click="login()">登录</mt-button>
+                <mt-button class="regisBtn" plain @click="regis()">注册</mt-button>
+            </div>
+            <van-number-keyboard :show="show" extra-key="." close-button-text="完成" @blur="show = false" @input="onInput" @delete="onDelete" />
         </div>
-      </div>
     </div>
 </template>
 <script>
@@ -27,6 +28,7 @@ export default {
   data() {
     return {
       isLogin: false, //路由守卫参数
+      show: false,
       myself_content:
         "姓名：闫全堃" +
         "<br/>" +
@@ -49,9 +51,9 @@ export default {
         ">个人github链接</a>",
       cardTitle: "自我介绍",
       isCardshow: false,
-      username: null,
+      username: "",
       email: null,
-      password: null
+      password: ""
     };
   },
   mounted() {
@@ -73,6 +75,13 @@ export default {
     regis() {
       this.$router.push("/regis");
     },
+    onInput(value) {
+      value = value.toString();
+      this.password += value;
+    },
+    onDelete() {
+      this.password = this.password.slice(0, this.password.length - 1);
+    },
     login() {
       this.$store.dispatch("getLogin", {
         username: this.username,
@@ -84,14 +93,14 @@ export default {
           that.isLogin = true;
           sessionStorage.setItem("getLogin", that.isLogin);
           that.$router.push("/index");
-          that.password = null;
-          that.username = null;
+          that.password = "";
+          that.username = "";
         } else {
           that.isLogin = false;
           sessionStorage.setItem("getLogin", that.isLogin);
           Toast(that.LoginRes.msg);
         }
-        clearTimeout(timer)
+        clearTimeout(timer);
       }, 100);
     },
     enterLogin() {

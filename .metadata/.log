@@ -1098,3 +1098,1242 @@ java.util.ConcurrentModificationException
 
 !ENTRY com.genuitec.eclipse.core 2 2 2018-08-25 16:49:59.251
 !MESSAGE Deployment is out of date due to changes in the underlying project contents. You'll need to manually 'Redeploy' the project to update the deployed archive.
+!SESSION 2018-08-27 10:37:57.019 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_13
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.osgi 2 0 2018-08-27 10:38:19.479
+!MESSAGE While loading class "org.eclipse.wst.jsdt.internal.core.JavaModelManager$16", thread "Thread[Worker-4,5,main]" timed out waiting (5003ms) for thread "Thread[Worker-7,5,main]" to finish starting bundle "org.eclipse.wst.jsdt.core_1.1.100.me201207241813 [984]". To avoid deadlock, thread "Thread[Worker-4,5,main]" is proceeding but "org.eclipse.wst.jsdt.internal.core.JavaModelManager$16" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:/D:/myeclipse/Common/plugins/org.eclipse.wst.jsdt.core_1.1.100.me201207241813.jar" by thread "Worker-7".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.eclipse.wst.jsdt.internal.core.JavaModelManager$15.run(JavaModelManager.java:4182)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 16 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.eclipse.wst.jsdt.internal.core.JavaModelManager$15.run(JavaModelManager.java:4182)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:21.847
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/ClusterCommandExecutor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:21.853
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/jedis/JedisClusterServerCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:21.859
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/jedis/JedisClusterStringCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:21.866
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceClusterServerCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:21.871
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceGeoCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:21.876
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettucePoolingConnectionProvider.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:21.884
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceReactiveClusterServerCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:21.891
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceReactiveGeoCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:21.900
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceReactiveRedisConnection.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:21.906
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceReactiveZSetCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:21.915
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceStringCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:21.923
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/RedisPassword.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:21.933
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/core/DefaultListOperations.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:21.940
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/core/RedisKeyValueTemplate$1.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:21.949
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/convert/SetConverter.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:21.957
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/jedis/JedisClusterKeyCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:21.963
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/jedis/JedisConverters.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:21.967
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/jedis/JedisResult.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:21.972
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceClusterKeyCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:21.980
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceConverters.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:21.986
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceReactiveRedisClusterConnection.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:21.993
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceReactiveSetCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.001
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceSetCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.009
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/ReactiveListCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.019
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/core/DefaultReactiveValueOperations.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.028
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/listener/RedisMessageListenerContainer.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.033
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/repository/cdi/RedisRepositoryBean.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.040
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/cache/DefaultRedisCacheWriter.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.046
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/ClusterCommandExecutionFailureException.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.052
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/convert/MapConverter.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.057
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/FutureResult.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.065
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceClusterConnection.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.073
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceReactiveClusterKeyCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.081
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceReactiveClusterZSetCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.086
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceReactiveNumberCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.091
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceReactiveScriptingCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.096
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceResult$LettuceResultBuilder.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.106
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/ReactiveGeoCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.116
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/ReactiveStringCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.125
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/core/DefaultHashOperations.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.132
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/core/DefaultReactiveZSetOperations.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.147
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/cache/RedisCache.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.155
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/jedis/JedisClusterConnection.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.164
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/jedis/JedisStringCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.172
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceReactiveClusterHyperLogLogCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.179
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceReactiveClusterStringCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.184
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceReactiveHashCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.190
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceReactiveZSetCommands$ArgumentConverters.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.197
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/ReactiveHyperLogLogCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.204
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/RedisSentinelConfiguration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.211
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/core/DefaultGeoOperations.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.216
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/core/DefaultReactiveListOperations.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.223
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/core/ReactiveRedisTemplate.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.228
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/core/RedisKeyValueAdapter$MappingExpirationListener.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.237
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/cache/RedisCacheConfiguration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.245
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/jedis/JedisClusterListCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.252
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceReactiveHyperLogLogCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.256
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceReactiveRedisConnection$AsyncConnect.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.261
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceResult.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.268
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/ReactiveZSetCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.273
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/RedisStandaloneConfiguration.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.280
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/core/convert/MappingRedisConverter.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.285
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/core/convert/ReferenceResolverImpl.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.292
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/core/DefaultReactiveHyperLogLogOperations.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.297
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/core/DefaultValueOperations.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.304
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/core/mapping/RedisMappingContext$ConfigAwareTimeToLiveAccessor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.310
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/core/RedisTemplate.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.319
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/listener/adapter/MessageListenerAdapter$MethodInvoker.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.325
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/cache/RedisCacheManager$RedisCacheManagerBuilder.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.333
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/ClusterSlotHashUtil.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.339
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/jedis/JedisClusterSetCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.347
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceClusterSetCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.353
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceConnection.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.358
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceReactiveClusterListCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.365
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceReactiveListCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.370
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/ReactiveHashCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.376
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/ReactiveNumberCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.385
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/core/DefaultClusterOperations.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.389
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/core/DefaultReactiveHashOperations.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.395
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/core/DefaultSetOperations.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.403
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/core/RedisQueryEngine.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.408
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/core/script/DefaultReactiveScriptExecutor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.416
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/cache/RedisCacheManager.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.421
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/DefaultStringRedisConnection.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.429
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/jedis/JedisResult$JedisResultBuilder.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.436
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceClusterListCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.442
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceReactiveClusterSetCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.448
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceReactiveStringCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.454
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/ReactiveSetCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.463
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/core/DefaultHyperLogLogOperations.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.469
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/core/DefaultReactiveSetOperations.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.475
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/core/RedisKeyValueAdapter.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.483
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/support/collections/DefaultRedisZSet.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.488
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/convert/Converters.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.494
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/jedis/JedisConnectionFactory.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.501
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/jedis/JedisSetCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.507
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceConnectionFactory.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.512
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceReactiveClusterServerCommands$PropertiesCollector.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.517
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceReactiveKeyCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.522
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/lettuce/LettuceReactiveServerCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.528
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/connection/ReactiveKeyCommands.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.537
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/core/DefaultReactiveGeoOperations.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.543
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/core/DefaultZSetOperations.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2018-08-27 10:38:22.551
+!MESSAGE The Java indexing could not index D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/lib/spring-data-redis-2.0.2.RELEASE.jar|org/springframework/data/redis/core/script/DefaultScriptExecutor.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.osgi 2 0 2018-08-27 10:38:24.494
+!MESSAGE While loading class "org.eclipse.wst.jsdt.internal.core.DeltaProcessor", thread "Thread[Worker-5,5,main]" timed out waiting (5001ms) for thread "Thread[Worker-7,5,main]" to finish starting bundle "org.eclipse.wst.jsdt.core_1.1.100.me201207241813 [984]". To avoid deadlock, thread "Thread[Worker-5,5,main]" is proceeding but "org.eclipse.wst.jsdt.internal.core.DeltaProcessor" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:/D:/myeclipse/Common/plugins/org.eclipse.wst.jsdt.core_1.1.100.me201207241813.jar" by thread "Worker-7".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.eclipse.wst.jsdt.internal.core.DeltaProcessingState.getDeltaProcessor(DeltaProcessingState.java:164)
+	at org.eclipse.wst.jsdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:389)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:146)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 24 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.eclipse.wst.jsdt.internal.core.DeltaProcessingState.getDeltaProcessor(DeltaProcessingState.java:164)
+	at org.eclipse.wst.jsdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:389)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:146)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.osgi 2 0 2018-08-27 10:38:29.500
+!MESSAGE While loading class "org.eclipse.wst.jsdt.internal.core.PackageFragment", thread "Thread[Worker-5,5,main]" timed out waiting (5000ms) for thread "Thread[Worker-7,5,main]" to finish starting bundle "org.eclipse.wst.jsdt.core_1.1.100.me201207241813 [984]". To avoid deadlock, thread "Thread[Worker-5,5,main]" is proceeding but "org.eclipse.wst.jsdt.internal.core.PackageFragment" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:/D:/myeclipse/Common/plugins/org.eclipse.wst.jsdt.core_1.1.100.me201207241813.jar" by thread "Worker-7".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.eclipse.wst.jsdt.internal.core.DeltaProcessingState.getDeltaProcessor(DeltaProcessingState.java:164)
+	at org.eclipse.wst.jsdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:389)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:146)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 24 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.eclipse.wst.jsdt.internal.core.DeltaProcessingState.getDeltaProcessor(DeltaProcessingState.java:164)
+	at org.eclipse.wst.jsdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:389)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:146)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.osgi 2 0 2018-08-27 10:38:34.506
+!MESSAGE While loading class "org.eclipse.wst.jsdt.internal.core.DeltaProcessor$1$FoundRelevantDeltaException", thread "Thread[Worker-5,5,main]" timed out waiting (5000ms) for thread "Thread[Worker-7,5,main]" to finish starting bundle "org.eclipse.wst.jsdt.core_1.1.100.me201207241813 [984]". To avoid deadlock, thread "Thread[Worker-5,5,main]" is proceeding but "org.eclipse.wst.jsdt.internal.core.DeltaProcessor$1$FoundRelevantDeltaException" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:/D:/myeclipse/Common/plugins/org.eclipse.wst.jsdt.core_1.1.100.me201207241813.jar" by thread "Worker-7".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.eclipse.wst.jsdt.internal.core.DeltaProcessingState.getDeltaProcessor(DeltaProcessingState.java:164)
+	at org.eclipse.wst.jsdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:389)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:146)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 24 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.eclipse.wst.jsdt.internal.core.DeltaProcessingState.getDeltaProcessor(DeltaProcessingState.java:164)
+	at org.eclipse.wst.jsdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:389)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:146)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.osgi 2 0 2018-08-27 10:38:39.515
+!MESSAGE While loading class "org.eclipse.wst.jsdt.internal.core.PackageFragmentRoot", thread "Thread[Worker-5,5,main]" timed out waiting (5000ms) for thread "Thread[Worker-7,5,main]" to finish starting bundle "org.eclipse.wst.jsdt.core_1.1.100.me201207241813 [984]". To avoid deadlock, thread "Thread[Worker-5,5,main]" is proceeding but "org.eclipse.wst.jsdt.internal.core.PackageFragmentRoot" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:/D:/myeclipse/Common/plugins/org.eclipse.wst.jsdt.core_1.1.100.me201207241813.jar" by thread "Worker-7".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.eclipse.wst.jsdt.internal.core.DeltaProcessingState.getDeltaProcessor(DeltaProcessingState.java:164)
+	at org.eclipse.wst.jsdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:389)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:146)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 24 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.eclipse.wst.jsdt.internal.core.DeltaProcessingState.getDeltaProcessor(DeltaProcessingState.java:164)
+	at org.eclipse.wst.jsdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:389)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:146)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.osgi 2 0 2018-08-27 10:38:44.527
+!MESSAGE While loading class "org.eclipse.wst.jsdt.internal.core.ModelUpdater", thread "Thread[Worker-5,5,main]" timed out waiting (5001ms) for thread "Thread[Worker-7,5,main]" to finish starting bundle "org.eclipse.wst.jsdt.core_1.1.100.me201207241813 [984]". To avoid deadlock, thread "Thread[Worker-5,5,main]" is proceeding but "org.eclipse.wst.jsdt.internal.core.ModelUpdater" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:/D:/myeclipse/Common/plugins/org.eclipse.wst.jsdt.core_1.1.100.me201207241813.jar" by thread "Worker-7".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.eclipse.wst.jsdt.internal.core.DeltaProcessor.<init>(DeltaProcessor.java:253)
+	at org.eclipse.wst.jsdt.internal.core.DeltaProcessingState.getDeltaProcessor(DeltaProcessingState.java:164)
+	at org.eclipse.wst.jsdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:389)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:146)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 25 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.eclipse.wst.jsdt.internal.core.DeltaProcessor.<init>(DeltaProcessor.java:253)
+	at org.eclipse.wst.jsdt.internal.core.DeltaProcessingState.getDeltaProcessor(DeltaProcessingState.java:164)
+	at org.eclipse.wst.jsdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:389)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:146)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.osgi 2 0 2018-08-27 10:38:49.536
+!MESSAGE While loading class "org.eclipse.wst.jsdt.internal.core.builder.JavaBuilder", thread "Thread[Worker-5,5,main]" timed out waiting (5001ms) for thread "Thread[Worker-7,5,main]" to finish starting bundle "org.eclipse.wst.jsdt.core_1.1.100.me201207241813 [984]". To avoid deadlock, thread "Thread[Worker-5,5,main]" is proceeding but "org.eclipse.wst.jsdt.internal.core.builder.JavaBuilder" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:/D:/myeclipse/Common/plugins/org.eclipse.wst.jsdt.core_1.1.100.me201207241813.jar" by thread "Worker-7".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.eclipse.wst.jsdt.internal.core.DeltaProcessor.resourceChanged(DeltaProcessor.java:1996)
+	at org.eclipse.wst.jsdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:389)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:146)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 24 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.eclipse.wst.jsdt.internal.core.DeltaProcessor.resourceChanged(DeltaProcessor.java:1996)
+	at org.eclipse.wst.jsdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:389)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:146)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.osgi 2 0 2018-08-27 10:38:54.563
+!MESSAGE While loading class "org.eclipse.wst.jsdt.internal.core.builder.ClasspathLocation", thread "Thread[Worker-5,5,main]" timed out waiting (5000ms) for thread "Thread[Worker-7,5,main]" to finish starting bundle "org.eclipse.wst.jsdt.core_1.1.100.me201207241813 [984]". To avoid deadlock, thread "Thread[Worker-5,5,main]" is proceeding but "org.eclipse.wst.jsdt.internal.core.builder.ClasspathLocation" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:/D:/myeclipse/Common/plugins/org.eclipse.wst.jsdt.core_1.1.100.me201207241813.jar" by thread "Worker-7".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.eclipse.wst.jsdt.internal.core.DeltaProcessor.resourceChanged(DeltaProcessor.java:1996)
+	at org.eclipse.wst.jsdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:389)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:146)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 24 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.eclipse.wst.jsdt.internal.core.DeltaProcessor.resourceChanged(DeltaProcessor.java:1996)
+	at org.eclipse.wst.jsdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:389)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:146)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.osgi 2 0 2018-08-27 10:38:59.576
+!MESSAGE While loading class "org.eclipse.wst.jsdt.internal.core.builder.ClasspathMultiDirectory", thread "Thread[Worker-5,5,main]" timed out waiting (5001ms) for thread "Thread[Worker-7,5,main]" to finish starting bundle "org.eclipse.wst.jsdt.core_1.1.100.me201207241813 [984]". To avoid deadlock, thread "Thread[Worker-5,5,main]" is proceeding but "org.eclipse.wst.jsdt.internal.core.builder.ClasspathMultiDirectory" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:/D:/myeclipse/Common/plugins/org.eclipse.wst.jsdt.core_1.1.100.me201207241813.jar" by thread "Worker-7".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.eclipse.wst.jsdt.internal.core.DeltaProcessor.resourceChanged(DeltaProcessor.java:1996)
+	at org.eclipse.wst.jsdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:389)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:146)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 24 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.eclipse.wst.jsdt.internal.core.DeltaProcessor.resourceChanged(DeltaProcessor.java:1996)
+	at org.eclipse.wst.jsdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:389)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:146)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.osgi 2 0 2018-08-27 10:39:04.582
+!MESSAGE While loading class "org.eclipse.wst.jsdt.internal.core.builder.MissingSourceFileException", thread "Thread[Worker-5,5,main]" timed out waiting (5000ms) for thread "Thread[Worker-7,5,main]" to finish starting bundle "org.eclipse.wst.jsdt.core_1.1.100.me201207241813 [984]". To avoid deadlock, thread "Thread[Worker-5,5,main]" is proceeding but "org.eclipse.wst.jsdt.internal.core.builder.MissingSourceFileException" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:/D:/myeclipse/Common/plugins/org.eclipse.wst.jsdt.core_1.1.100.me201207241813.jar" by thread "Worker-7".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.eclipse.wst.jsdt.internal.core.DeltaProcessor.resourceChanged(DeltaProcessor.java:1996)
+	at org.eclipse.wst.jsdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:389)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:146)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 24 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.eclipse.wst.jsdt.internal.core.DeltaProcessor.resourceChanged(DeltaProcessor.java:1996)
+	at org.eclipse.wst.jsdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:389)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:146)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.osgi 2 0 2018-08-27 10:39:09.587
+!MESSAGE While loading class "org.eclipse.wst.jsdt.internal.core.builder.ImageBuilderInternalException", thread "Thread[Worker-5,5,main]" timed out waiting (5000ms) for thread "Thread[Worker-7,5,main]" to finish starting bundle "org.eclipse.wst.jsdt.core_1.1.100.me201207241813 [984]". To avoid deadlock, thread "Thread[Worker-5,5,main]" is proceeding but "org.eclipse.wst.jsdt.internal.core.builder.ImageBuilderInternalException" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:/D:/myeclipse/Common/plugins/org.eclipse.wst.jsdt.core_1.1.100.me201207241813.jar" by thread "Worker-7".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.eclipse.wst.jsdt.internal.core.DeltaProcessor.resourceChanged(DeltaProcessor.java:1996)
+	at org.eclipse.wst.jsdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:389)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:146)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 24 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.eclipse.wst.jsdt.internal.core.DeltaProcessor.resourceChanged(DeltaProcessor.java:1996)
+	at org.eclipse.wst.jsdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:389)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:146)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.osgi 2 0 2018-08-27 10:39:14.603
+!MESSAGE While loading class "org.eclipse.wst.jsdt.internal.core.builder.BuildNotifier", thread "Thread[Worker-5,5,main]" timed out waiting (5001ms) for thread "Thread[Worker-7,5,main]" to finish starting bundle "org.eclipse.wst.jsdt.core_1.1.100.me201207241813 [984]". To avoid deadlock, thread "Thread[Worker-5,5,main]" is proceeding but "org.eclipse.wst.jsdt.internal.core.builder.BuildNotifier" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:/D:/myeclipse/Common/plugins/org.eclipse.wst.jsdt.core_1.1.100.me201207241813.jar" by thread "Worker-7".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.eclipse.wst.jsdt.internal.core.builder.JavaBuilder.buildFinished(JavaBuilder.java:121)
+	at org.eclipse.wst.jsdt.internal.core.DeltaProcessor.resourceChanged(DeltaProcessor.java:1996)
+	at org.eclipse.wst.jsdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:389)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:146)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 25 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.eclipse.wst.jsdt.internal.core.builder.JavaBuilder.buildFinished(JavaBuilder.java:121)
+	at org.eclipse.wst.jsdt.internal.core.DeltaProcessor.resourceChanged(DeltaProcessor.java:1996)
+	at org.eclipse.wst.jsdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:389)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:146)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.osgi 2 0 2018-08-27 10:39:19.821
+!MESSAGE While loading class "org.eclipse.wst.jsdt.internal.core.DeltaProcessor$2", thread "Thread[Worker-5,5,main]" timed out waiting (5001ms) for thread "Thread[Worker-7,5,main]" to finish starting bundle "org.eclipse.wst.jsdt.core_1.1.100.me201207241813 [984]". To avoid deadlock, thread "Thread[Worker-5,5,main]" is proceeding but "org.eclipse.wst.jsdt.internal.core.DeltaProcessor$2" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:/D:/myeclipse/Common/plugins/org.eclipse.wst.jsdt.core_1.1.100.me201207241813.jar" by thread "Worker-7".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.eclipse.wst.jsdt.internal.core.DeltaProcessor.isAffectedBy(DeltaProcessor.java:1451)
+	at org.eclipse.wst.jsdt.internal.core.DeltaProcessor.resourceChanged(DeltaProcessor.java:1896)
+	at org.eclipse.wst.jsdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:389)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:395)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1530)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:156)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 26 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.eclipse.wst.jsdt.internal.core.DeltaProcessor.isAffectedBy(DeltaProcessor.java:1451)
+	at org.eclipse.wst.jsdt.internal.core.DeltaProcessor.resourceChanged(DeltaProcessor.java:1896)
+	at org.eclipse.wst.jsdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:389)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:395)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1530)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:156)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SESSION 2018-08-29 09:46:51.923 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_13
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.osgi 2 0 2018-08-29 09:47:33.040
+!MESSAGE While loading class "org.eclipse.wst.jsdt.internal.core.JavaModelManager$16", thread "Thread[Worker-1,5,main]" timed out waiting (5002ms) for thread "Thread[Worker-6,5,main]" to finish starting bundle "org.eclipse.wst.jsdt.core_1.1.100.me201207241813 [984]". To avoid deadlock, thread "Thread[Worker-1,5,main]" is proceeding but "org.eclipse.wst.jsdt.internal.core.JavaModelManager$16" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:/D:/myeclipse/Common/plugins/org.eclipse.wst.jsdt.core_1.1.100.me201207241813.jar" by thread "Worker-6".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.eclipse.wst.jsdt.internal.core.JavaModelManager$15.run(JavaModelManager.java:4182)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 16 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.eclipse.wst.jsdt.internal.core.JavaModelManager$15.run(JavaModelManager.java:4182)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SESSION 2018-10-12 13:49:49.942 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_13
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -data D:\Work\mintApp -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.osgi 2 0 2018-10-12 13:50:13.430
+!MESSAGE While loading class "org.eclipse.wst.jsdt.internal.core.JavaModelManager$16", thread "Thread[Worker-0,5,main]" timed out waiting (5003ms) for thread "Thread[Worker-2,5,main]" to finish starting bundle "org.eclipse.wst.jsdt.core_1.1.100.me201207241813 [984]". To avoid deadlock, thread "Thread[Worker-0,5,main]" is proceeding but "org.eclipse.wst.jsdt.internal.core.JavaModelManager$16" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:/D:/myeclipse/Common/plugins/org.eclipse.wst.jsdt.core_1.1.100.me201207241813.jar" by thread "Worker-2".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.eclipse.wst.jsdt.internal.core.JavaModelManager$15.run(JavaModelManager.java:4182)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 16 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.eclipse.wst.jsdt.internal.core.JavaModelManager$15.run(JavaModelManager.java:4182)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SESSION 2018-10-12 14:12:59.016 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_13
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.osgi 2 0 2018-10-12 14:13:38.904
+!MESSAGE While loading class "org.eclipse.wst.jsdt.internal.core.JavaModelManager$16", thread "Thread[Worker-11,5,main]" timed out waiting (5005ms) for thread "Thread[Worker-1,5,main]" to finish starting bundle "org.eclipse.wst.jsdt.core_1.1.100.me201207241813 [984]". To avoid deadlock, thread "Thread[Worker-11,5,main]" is proceeding but "org.eclipse.wst.jsdt.internal.core.JavaModelManager$16" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:/D:/myeclipse/Common/plugins/org.eclipse.wst.jsdt.core_1.1.100.me201207241813.jar" by thread "Worker-1".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.eclipse.wst.jsdt.internal.core.JavaModelManager$15.run(JavaModelManager.java:4182)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 16 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.eclipse.wst.jsdt.internal.core.JavaModelManager$15.run(JavaModelManager.java:4182)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SESSION 2018-10-16 16:02:49.245 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_13
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.osgi 2 0 2018-10-16 16:03:32.245
+!MESSAGE While loading class "org.eclipse.wst.jsdt.internal.core.JavaModelManager$16", thread "Thread[Worker-2,5,main]" timed out waiting (5005ms) for thread "Thread[Worker-1,5,main]" to finish starting bundle "org.eclipse.wst.jsdt.core_1.1.100.me201207241813 [984]". To avoid deadlock, thread "Thread[Worker-2,5,main]" is proceeding but "org.eclipse.wst.jsdt.internal.core.JavaModelManager$16" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:/D:/myeclipse/Common/plugins/org.eclipse.wst.jsdt.core_1.1.100.me201207241813.jar" by thread "Worker-1".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.eclipse.wst.jsdt.internal.core.JavaModelManager$15.run(JavaModelManager.java:4182)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 16 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.eclipse.wst.jsdt.internal.core.JavaModelManager$15.run(JavaModelManager.java:4182)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)

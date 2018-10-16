@@ -1,11 +1,8 @@
  <template>
     <div>
         <mt-header title="个人照片展示">
-            <router-link to="/Login" slot="left">
-                <mt-button icon="back">返回</mt-button>
-            </router-link>
-            <router-link to="/index" slot="right">
-                <mt-button icon="go">主页</mt-button>
+            <router-link :to=url slot="left">
+                <mt-button icon="back" @click="go_back()">返回</mt-button>
             </router-link>
         </mt-header>
         <div class="contract-list" v-for="item in list" :key="item.id">
@@ -22,10 +19,20 @@ import img3 from "./../../assets/timg.jpg";
 export default {
   data() {
     return {
-      list: [{ img: img1 }, { img: img2 }, { img: img3 }]
+      list: [{ img: img1 }, { img: img2 }, { img: img3 }],
+      url: "/index"
     };
   },
-  methods: {}
+  methods: {
+    go_back() {
+      let isLogin = sessionStorage.getItem("getLogin");
+      if (isLogin) {
+        this.$router.push("/index");
+      } else {
+        this.$router.push("/login");
+      }
+    }
+  }
 };
 </script>
 <style lang="less" scoped>

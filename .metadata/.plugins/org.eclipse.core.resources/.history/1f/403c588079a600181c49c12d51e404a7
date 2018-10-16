@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="mint_app_back">
-        <property name="context-root" value="/mint_app_back"/>
-        <property name="java-output-path" value="/mint_app_back/WebRoot/WEB-INF/classes"/>
-    </wb-module>
-</project-modules>

@@ -4,6 +4,7 @@ import Login from '@/components/Login'
 import index from '@/components/index'
 import selfimages from '@/components/views/selfimages'
 import regis from '@/components/views/regis'
+import map from '@/components/views/map'
 import error from '@/components/views/error'
 
 Vue.use(Router)
@@ -28,6 +29,13 @@ export default new Router({
         path: '/regis',
         name: 'regis',
         component: regis
+    }, {
+        path: '/map',
+        name: 'map',
+        meta: {
+            requireAuth: true
+        },
+        component: map
     }, {
         path: '/index',
         meta: {

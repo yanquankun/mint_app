@@ -37,3 +37,22 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY com.genuitec.eclipse.wizards 1 0 2018-08-24 08:54:36.328
 !MESSAGE Installed snippet library: D:\myeclipse\MyEclipse 10\configuration\org.eclipse.osgi\bundles\134\1\.cp\snippets\jsp\struts_tiles_snippets.xml
+!SESSION 2018-09-04 17:17:22.567 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_13
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -data D:\Work\mintApp\mint_app_back -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.core.jobs 4 2 2018-09-04 17:17:47.441
+!MESSAGE An internal error occurred during: "CheckLicensesAndNotify".
+!STACK 0
+java.lang.NullPointerException
+	at com.genuitec.pulse.client.targetcfg.collab.ui.jobs.CheckLicensesAndNotifyJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 2 2 2018-09-04 17:17:48.287
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: com.genuitec.pulse2.client.services.internal.PulseClient$1
+
+!ENTRY org.eclipse.core.jobs 2 2 2018-09-04 17:17:48.302
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: com.genuitec.pulse2.client.targetcfg.ui.jobs.InitializeTargetCfgJob

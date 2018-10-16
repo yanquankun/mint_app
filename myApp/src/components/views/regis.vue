@@ -1,12 +1,12 @@
 <template>
     <div class="regis_web">
-        <mt-header title="注册" >
+        <mt-header title="注册">
             <router-link to="/Login" slot="left">
                 <mt-button icon="back">返回</mt-button>
             </router-link>
         </mt-header>
         <div class="lists">
-            <mt-field label="用户名" placeholder="请输入用户名" type="username" v-model="username"></mt-field>           
+            <mt-field label="用户名" placeholder="请输入用户名" type="username" v-model="username"></mt-field>
             <mt-field label="邮箱" placeholder="请输入邮箱" type="email" v-model="email"></mt-field>
             <mt-field label="密码" placeholder="请输入密码" type="password" v-model="password"></mt-field>
             <mt-field label="手机号" placeholder="请输入手机号" type="number" v-model="phone"></mt-field>
@@ -28,9 +28,9 @@ export default {
       guid: ""
     };
   },
-  computed:{
-    regisResult:function(){
-      return this.$store.state.regisResult
+  computed: {
+    regisResult: function() {
+      return this.$store.state.regisResult;
     }
   },
   methods: {
