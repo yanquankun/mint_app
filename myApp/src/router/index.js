@@ -5,6 +5,8 @@ import index from '@/components/index'
 import selfimages from '@/components/views/selfimages'
 import regis from '@/components/views/regis'
 import map from '@/components/views/map'
+import product from '@/components/views/product'
+import shop_car from '@/components/views/shopCar'
 import error from '@/components/views/error'
 
 Vue.use(Router)
@@ -43,6 +45,14 @@ export default new Router({
         },
         name: 'index',
         component: index
+    }, {
+        path: '/product',
+        name: 'product',
+        component: product
+    }, {
+        path: '/shop_car',
+        name: 'shop_car',
+        component: shop_car
     }, {
         path: '**',
         component: error

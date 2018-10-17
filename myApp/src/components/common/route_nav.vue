@@ -1,19 +1,24 @@
 <template>
     <div class="route_nav_web">
-        <van-tabbar v-model="active" :z-index=zed >
-            <van-tabbar-item icon="shop" to="/index">index页面</van-tabbar-item>
-            <van-tabbar-item icon="chat" dot url="https://github.com/yanquankun">个人git</van-tabbar-item>
-            <van-tabbar-item icon="records" to="/images">个人照片</van-tabbar-item>
-            <van-tabbar-item icon="gold-coin" info="map">地图</van-tabbar-item>
+        <van-tabbar :value="active_data" :z-index=zed>
+            <van-tabbar-item icon="shop" to="/index">主页</van-tabbar-item>
+            <van-tabbar-item icon="photo" to="/images">个人照片</van-tabbar-item>
+            <van-tabbar-item icon="shop" dot to="/product">商品</van-tabbar-item>
+            <van-tabbar-item icon="cart" to="/shop_car" info="￥">购物车</van-tabbar-item>
         </van-tabbar>
     </div>
 </template>
 <script>
 export default {
+  props: ["active"],
+  computed:{
+      active_data:function(){
+          return this.active;
+      }
+  },
   data() {
     return {
-      active: 0,
-      zed:99
+      zed: 99
     };
   }
 };
