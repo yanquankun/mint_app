@@ -7,6 +7,7 @@ import regis from '@/components/views/regis'
 import map from '@/components/views/map'
 import product from '@/components/views/product'
 import shop_car from '@/components/views/shopCar'
+import product_view from '@/components/common/product_view'
 import error from '@/components/views/error'
 
 Vue.use(Router)
@@ -48,11 +49,24 @@ export default new Router({
     }, {
         path: '/product',
         name: 'product',
+        meta: {
+            requireAuth: true
+        },
         component: product
     }, {
         path: '/shop_car',
         name: 'shop_car',
+        meta: {
+            requireAuth: true
+        },
         component: shop_car
+    }, {
+        path: '/product_view',
+        name: 'product_view',
+        meta: {
+            requireAuth: true
+        },
+        component: product_view
     }, {
         path: '**',
         component: error
