@@ -114,7 +114,7 @@ export default {
               }
             ],
             k_s: "s1",
-            count: 2
+            count: 1
           },
           {
             k: "尺寸",

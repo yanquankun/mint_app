@@ -18,16 +18,18 @@
 <coolItem id="com.genuitec.myeclipse.actions.desktop" itemType="typeToolBarContribution" x="61" y="22"/>
 <coolItem id="com.genuitec.myeclipse.actions.reporting" itemType="typeToolBarContribution" x="92" y="22"/>
 <coolItem id="com.genuitec.myeclipse.actions.screencapture" itemType="typeToolBarContribution" x="69" y="22"/>
-<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="482" y="22"/>
+<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="177" y="22"/>
 <coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="92" y="22"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="115" y="22"/>
 <coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="107" y="22"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="61" y="22"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="254" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
-<coolItem id="com.genuitec.eclipse.springframework.springconfigeditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.genuitec.eclipse.webdesigner3.editors.html" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="com.genuitec.eclipse.springframework.springconfigeditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="com.genuitec.eclipse.webdesigner3.editors.jsp" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.jboss.tools.common.propertieseditor.PropertiesCompoundEditor" itemType="typeToolBarContribution" x="38" y="22"/>
 <coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
@@ -36,7 +38,7 @@
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
-<page aggregateWorkingSetId="Aggregate for window 1534990023449" focus="true" label="Workspace - Java">
+<page aggregateWorkingSetId="Aggregate for window 1534990023449" focus="true" label="Workspace - Debug">
 <editors>
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
@@ -50,8 +52,6 @@
 <part id="5"/>
 <part id="6"/>
 <part id="7"/>
-<part id="8"/>
-<part id="9"/>
 </presentation>
 </folder>
 </info>
@@ -61,24 +61,15 @@
 </editor>
 <editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UserController.java" partName="UserController.java" path="D:/Work/mintApp/mint_app_back/src/cn/yun/controller/UserController.java" title="UserController.java" tooltip="mint_app_back/src/cn/yun/controller/UserController.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/mint_app_back/src/cn/yun/controller/UserController.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1325" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1110" selectionTopPixel="396"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TLoginUser.java" partName="TLoginUser.java" path="D:/Work/mintApp/mint_app_back/src/cn/yun/dto/TLoginUser.java" title="TLoginUser.java" tooltip="mint_app_back/src/cn/yun/dto/TLoginUser.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/mint_app_back/src/cn/yun/dto/TLoginUser.java"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
-<editor id="com.genuitec.eclipse.springframework.springconfigeditor" name="springmvc.xml" partName="springmvc.xml" path="D:/Work/mintApp/mint_app_back/src/springmvc.xml" title="springmvc.xml" tooltip="mint_app_back/src/springmvc.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/mint_app_back/src/springmvc.xml"/>
-</editor>
-<editor id="com.genuitec.eclipse.editor.webapp25" name="web.xml" partName="web.xml" path="D:/Work/mintApp/mint_app_back/WebRoot/WEB-INF/web.xml" title="web.xml" tooltip="mint_app_back/WebRoot/WEB-INF/web.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/mint_app_back/WebRoot/WEB-INF/web.xml"/>
-</editor>
-<editor id="com.genuitec.eclipse.springframework.springconfigeditor" name="spring-mybatis.xml" partName="spring-mybatis.xml" path="D:/Work/mintApp/mint_app_back/src/spring-mybatis.xml" title="spring-mybatis.xml" tooltip="mint_app_back/src/spring-mybatis.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/mint_app_back/src/spring-mybatis.xml"/>
-</editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UserService.java" partName="UserService.java" path="D:/Work/mintApp/mint_app_back/src/cn/yun/service/UserService.java" title="UserService.java" tooltip="mint_app_back/src/cn/yun/service/UserService.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/mint_app_back/src/cn/yun/service/UserService.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="430" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="302" selectionTopPixel="0"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UserDao.java" partName="UserDao.java" path="D:/Work/mintApp/mint_app_back/src/cn/yun/dao/UserDao.java" title="UserDao.java" tooltip="mint_app_back/src/cn/yun/dao/UserDao.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/mint_app_back/src/cn/yun/dao/UserDao.java"/>
@@ -90,7 +81,11 @@
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ValidateUtil.java" partName="ValidateUtil.java" path="D:/Work/mintApp/mint_app_back/src/cn/common/controller/ValidateUtil.java" title="ValidateUtil.java" tooltip="mint_app_back/src/cn/common/controller/ValidateUtil.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/mint_app_back/src/cn/common/controller/ValidateUtil.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1499" selectionTopPixel="1086"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1499" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.ClassFileEditor" name="HttpServlet.class" partName="HttpServlet.class" title="HttpServlet.class" tooltip="javax.servlet.http.HttpServlet" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" org.eclipse.jdt.ui.ClassFileIdentifier="=mint_app_back/D:\/myeclipse\/Common\/plugins\/com.genuitec.eclipse.j2eedt.core_10.5.0.me201207171805\/data\/libraryset\/EE_5\/javaee.jar&lt;javax.servlet.http(HttpServlet.class"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -99,6 +94,12 @@
 <viewState/>
 </view>
 <view id="org.eclipse.debug.ui.DebugView" partName="Debug">
+<viewState/>
+</view>
+<view id="org.eclipse.debug.ui.BreakpointView" partName="Breakpoints">
+<viewState/>
+</view>
+<view id="org.eclipse.debug.ui.VariableView" partName="Variables">
 <viewState/>
 </view>
 <view id="org.eclipse.ui.views.TaskList" partName="Tasks">
@@ -114,6 +115,9 @@
 </viewState>
 </view>
 <view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
+<viewState/>
+</view>
+<view id="org.eclipse.debug.ui.ExpressionView" partName="Expressions">
 <viewState/>
 </view>
 <view id="org.springframework.ide.eclipse.ui.navigator.springExplorer" partName="Spring Explorer">
@@ -175,7 +179,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.ui.console.ConsoleView" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.debug.ui.DebugPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="com.genuitec.myeclipse.perspective.MyEclipsePerspectiveFactory" id="com.genuitec.myeclipse.perspective.myeclipseperspective" label="MyEclipse Java Enterprise"/>
 <alwaysOnActionSet id="com.genuitec.myeclipse.actions.deploytools"/>
@@ -467,7 +471,7 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.16981769" ratioLeft="503" ratioRight="2459" relationship="2" relative="left"/>
-<info folder="true" part="bottom" ratio="0.6085714" ratioLeft="1065" ratioRight="685" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="bottom" ratio="0.6045714" ratioLeft="1058" ratioRight="692" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.jdt.ui.SourceView" label="Declaration"/>
@@ -586,33 +590,47 @@
 <view id="org.eclipse.ui.views.TaskList"/>
 <view id="com.genuitec.eclipse.ast.deploy.core.serverview"/>
 <view id="org.eclipse.debug.ui.DebugView"/>
-<fastViewBars>&#x0A;<fastViewBar fastViewLocation="131072" id="org.eclipse.debug.internal.ui.ToolsFolderView" orientation="256" selectedTabId="org.eclipse.debug.ui.VariableView" style="0">&#x0A;<fastViews>&#x0A;<view id="org.eclipse.debug.ui.VariableView" ratio="0.3"/>
+<fastViewBars>
+<fastViewBar fastViewLocation="131072" id="org.eclipse.debug.internal.ui.ToolsFolderView" orientation="256" selectedTabId="org.eclipse.debug.ui.VariableView" style="0">
+<fastViews>
+<view id="org.eclipse.debug.ui.VariableView" ratio="0.3"/>
 <view id="org.eclipse.debug.ui.BreakpointView" ratio="0.3"/>
 <view id="org.eclipse.debug.ui.ExpressionView" ratio="0.3"/>
 </fastViews>
 </fastViewBar>
-<fastViewBar fastViewLocation="131072" id="org.eclipse.debug.internal.ui.OutlineFolderView" orientation="512" selectedTabId="org.eclipse.ui.views.ContentOutline" style="0">&#x0A;<fastViews>&#x0A;<view id="org.eclipse.ui.views.ContentOutline" ratio="0.3"/>
+<fastViewBar fastViewLocation="131072" id="org.eclipse.debug.internal.ui.OutlineFolderView" orientation="512" selectedTabId="org.eclipse.ui.views.ContentOutline" style="0">
+<fastViews>
+<view id="org.eclipse.ui.views.ContentOutline" ratio="0.3"/>
 </fastViews>
 </fastViewBar>
 </fastViewBars>
-<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">&#x0A;<page content="com.genuitec.eclipse.ast.deploy.core.serverview" label="Servers"/>
+<layout>
+<mainWindow>
+<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">
+<page content="com.genuitec.eclipse.ast.deploy.core.serverview" label="Servers"/>
 <page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <page content="org.eclipse.dltk.ui.ScriptExplorer" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.PackageExplorer" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
 <page content="org.eclipse.wst.server.ui.ServersView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.74974704" ratioLeft="2223" ratioRight="742" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="stickyFolderRight" ratio="0.74974704" ratioLeft="2223" ratioRight="742" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.72571427" ratioLeft="1270" ratioRight="480" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.72571427" ratioLeft="1270" ratioRight="480" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
@@ -623,19 +641,24 @@
 <page content="org.eclipse.jdt.debug.ui.DisplayView" label="LabelNotFound"/>
 <page content="org.eclipse.search.SearchResultView" label="LabelNotFound"/>
 <page content="org.eclipse.wst.xsl.jaxp.debug.ui.view1" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.8287293" ratioLeft="1050" ratioRight="217" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
-<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.74974704" ratioLeft="2223" ratioRight="742" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder appearance="2" expanded="0">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
+<info part="org.eclipse.ui.editorss" ratio="0.20757696" ratioLeft="263" ratioRight="1004" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.74974704" ratioLeft="2223" ratioRight="742" relationship="2" relative="org.eclipse.ui.editorss">
+<folder appearance="2" expanded="0">
+<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
 <page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
 <page content="org.eclipse.atf.mozilla.ide.ui.views.inspector" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.49983138" ratioLeft="1482" ratioRight="1483" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder appearance="2" expanded="0">&#x0A;<page content="org.eclipse.debug.ui.VariableView" label="LabelNotFound"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.49983138" ratioLeft="1482" ratioRight="1483" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder appearance="2" expanded="0">
+<page content="org.eclipse.debug.ui.VariableView" label="LabelNotFound"/>
 <page content="org.eclipse.debug.ui.BreakpointView" label="LabelNotFound"/>
 <page content="org.eclipse.debug.ui.RegisterView" label="LabelNotFound"/>
 <page content="org.eclipse.debug.ui.ExpressionView" label="LabelNotFound"/>
@@ -653,89 +676,25 @@
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/mint_app_back/src/cn/yun/controller/UserController.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" path="/mint_app_back/src/cn/yun/mapper/TMintUsersMapper.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/mint_app_back/src/cn/yun/service/UserService.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/mint_app_back/src/cn/common/controller/ValidateUtil.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/mint_app_back/src/cn/yun/dto/TLoginUser.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/mint_app_back/src/cn/yun/dao/UserDao.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/mint_app_back/src/cn/yun/service/UserService.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/mint_app_back/src/cn/common/controller/ValidateUtil.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/mint_app_back/src/cn/yun/controller/UserController.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/mint_app_back/src/cn/yun/dto/TUser.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.springframework.springconfigeditor" path="/mint_app_back/src/spring-mybatis.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.springframework.springconfigeditor" path="/mint_app_back/src/springmvc.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.html" path="/mint_app_back/WebRoot/mint/views/a.html"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.jsp" path="/mint_app_back/WebRoot/index.jsp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.editor.webapp25" path="/mint_app_back/WebRoot/WEB-INF/web.xml"/>
+<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=mint_app_back/D:\/Work\/mintApp\/mint_app_back\/WebRoot\/WEB-INF\/lib\/spring-webmvc-4.1.1.RELEASE.jar&lt;org.springframework.web.servlet(FrameworkServlet.class"/>
+<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=mint_app_back/D:\/myeclipse\/Common\/plugins\/com.genuitec.eclipse.j2eedt.core_10.5.0.me201207171805\/data\/libraryset\/EE_5\/javaee.jar&lt;javax.servlet.http(HttpServlet.class"/>
 </editors>
-<item historyLabel="TMintUsersMapper.xml" index="1"/>
-<item historyLabel="UserController.java" index="0">
-<position/>
-</item>
-<item historyLabel="TMintUsersMapper.xml" index="1"/>
-<item historyLabel="UserController.java" index="0">
-<position/>
-</item>
-<item historyLabel="UserController.java" index="0">
-<position/>
-</item>
-<item historyLabel="UserController.java" index="0">
-<position/>
-</item>
-<item historyLabel="UserService.java" index="2">
-<position info="not_deleted" x="262" y="0"/>
-</item>
-<item historyLabel="UserService.java" index="2">
-<position info="not_deleted" x="430" y="0"/>
-</item>
-<item historyLabel="UserController.java" index="0">
-<position info="not_deleted" x="3074" y="0"/>
-</item>
-<item historyLabel="UserController.java" index="0">
-<position info="not_deleted" x="3168" y="0"/>
-</item>
-<item historyLabel="ValidateUtil.java" index="3">
-<position info="not_deleted" x="197" y="0"/>
-</item>
-<item historyLabel="UserController.java" index="0">
-<position/>
-</item>
-<item historyLabel="ValidateUtil.java" index="3">
-<position info="not_deleted" x="197" y="0"/>
-</item>
-<item historyLabel="UserController.java" index="0">
-<position/>
-</item>
-<item historyLabel="ValidateUtil.java" index="3">
-<position info="not_deleted" x="234" y="15"/>
-</item>
-<item historyLabel="UserController.java" index="0">
-<position/>
-</item>
-<item historyLabel="UserController.java" index="0">
-<position/>
-</item>
-<item historyLabel="ValidateUtil.java" index="3">
-<position info="not_deleted" x="112" y="12"/>
-</item>
-<item historyLabel="UserController.java" index="0">
-<position/>
-</item>
-<item historyLabel="ValidateUtil.java" index="3">
-<position info="not_deleted" x="197" y="0"/>
-</item>
-<item historyLabel="UserController.java" index="0">
-<position/>
-</item>
-<item historyLabel="UserController.java" index="0">
-<position/>
-</item>
-<item historyLabel="ValidateUtil.java" index="3">
-<position info="not_deleted" x="197" y="0"/>
-</item>
-<item historyLabel="ValidateUtil.java" index="3">
-<position/>
-</item>
-<item historyLabel="ValidateUtil.java" index="3">
+<item historyLabel="ValidateUtil.java" index="2">
 <position info="not_deleted" x="823" y="7"/>
 </item>
-<item historyLabel="UserController.java" index="0">
-<position/>
-</item>
-<item historyLabel="TMintUsersMapper.xml" index="1"/>
-<item historyLabel="ValidateUtil.java" index="3">
-<position info="not_deleted" x="823" y="7"/>
-</item>
-<item historyLabel="ValidateUtil.java" index="3">
+<item historyLabel="ValidateUtil.java" index="2">
 <position info="not_deleted" x="892" y="0"/>
 </item>
 <item historyLabel="UserController.java" index="0">
@@ -744,28 +703,28 @@
 <item historyLabel="UserController.java" index="0">
 <position/>
 </item>
-<item historyLabel="ValidateUtil.java" index="3">
+<item historyLabel="ValidateUtil.java" index="2">
 <position info="not_deleted" x="892" y="0"/>
 </item>
 <item historyLabel="UserController.java" index="0">
 <position/>
 </item>
-<item historyLabel="ValidateUtil.java" index="3">
+<item historyLabel="ValidateUtil.java" index="2">
 <position info="not_deleted" x="892" y="0"/>
 </item>
 <item historyLabel="UserController.java" index="0">
 <position/>
 </item>
-<item historyLabel="ValidateUtil.java" index="3">
+<item historyLabel="ValidateUtil.java" index="2">
 <position info="not_deleted" x="892" y="0"/>
 </item>
-<item historyLabel="ValidateUtil.java" index="3">
+<item historyLabel="ValidateUtil.java" index="2">
 <position/>
 </item>
-<item historyLabel="ValidateUtil.java" index="3">
+<item historyLabel="ValidateUtil.java" index="2">
 <position/>
 </item>
-<item historyLabel="ValidateUtil.java" index="3">
+<item historyLabel="ValidateUtil.java" index="2">
 <position info="not_deleted" x="729" y="0"/>
 </item>
 <item historyLabel="UserController.java" index="0">
@@ -775,7 +734,7 @@
 <position/>
 </item>
 <item historyLabel="TMintUsersMapper.xml" index="1"/>
-<item historyLabel="ValidateUtil.java" index="3">
+<item historyLabel="ValidateUtil.java" index="2">
 <position info="not_deleted" x="1499" y="0"/>
 </item>
 <item historyLabel="UserController.java" index="0">
@@ -787,17 +746,80 @@
 <item historyLabel="UserController.java" index="0">
 <position info="not_deleted" x="4260" y="0"/>
 </item>
-<item historyLabel="TLoginUser.java" index="4">
+<item historyLabel="TLoginUser.java" index="3">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="TLoginUser.java" index="4">
+<item historyLabel="TLoginUser.java" index="3">
 <position info="not_deleted" x="0" y="0"/>
 </item>
 <item historyLabel="UserController.java" index="0">
 <position info="not_deleted" x="4277" y="0"/>
 </item>
-<item active="true" historyLabel="UserController.java" index="0">
+<item historyLabel="UserController.java" index="0">
 <position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="UserDao.java" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="UserService.java" index="5">
+<position info="not_deleted" x="430" y="0"/>
+</item>
+<item historyLabel="ValidateUtil.java" index="6">
+<position info="not_deleted" x="1499" y="0"/>
+</item>
+<item historyLabel="UserController.java" index="7">
+<position info="not_deleted" x="1325" y="0"/>
+</item>
+<item historyLabel="UserService.java" index="5">
+<position info="not_deleted" x="302" y="0"/>
+</item>
+<item historyLabel="UserController.java" index="7">
+<position info="not_deleted" x="1325" y="0"/>
+</item>
+<item historyLabel="ValidateUtil.java" index="6">
+<position info="not_deleted" x="1499" y="0"/>
+</item>
+<item historyLabel="TUser.java" index="8">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="UserController.java" index="7">
+<position info="not_deleted" x="861" y="0"/>
+</item>
+<item historyLabel="spring-mybatis.xml" index="9"/>
+<item historyLabel="springmvc.xml" index="10"/>
+<item historyLabel="a.html" index="11"/>
+<item historyLabel="index.jsp" index="12"/>
+<item historyLabel="web.xml" index="13"/>
+<item historyLabel="index.jsp" index="12"/>
+<item historyLabel="a.html" index="11"/>
+<item historyLabel="springmvc.xml" index="10"/>
+<item historyLabel="spring-mybatis.xml" index="9"/>
+<item historyLabel="UserController.java" index="7">
+<position info="not_deleted" x="861" y="0"/>
+</item>
+<item historyLabel="UserController.java" index="7">
+<position info="not_deleted" x="1108" y="0"/>
+</item>
+<item historyLabel="UserController.java" index="7">
+<position info="not_deleted" x="1110" y="0"/>
+</item>
+<item historyLabel="FrameworkServlet.class" index="14">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="UserController.java" index="7">
+<position info="not_deleted" x="1222" y="0"/>
+</item>
+<item historyLabel="HttpServlet.class" index="15">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="UserController.java" index="7">
+<position info="not_deleted" x="1110" y="0"/>
+</item>
+<item historyLabel="UserController.java" index="7">
+<position info="not_deleted" x="1460" y="0"/>
+</item>
+<item active="true" historyLabel="UserController.java" index="7">
+<position info="not_deleted" x="1110" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -808,6 +830,8 @@
 <trimArea IMemento.internal.id="131072">
 <trimItem IMemento.internal.id="right"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@511598b6"/>
+<trimItem IMemento.internal.id="org.eclipse.debug.internal.ui.ToolsFolderView"/>
+<trimItem IMemento.internal.id="org.eclipse.debug.internal.ui.OutlineFolderView"/>
 </trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
@@ -820,6 +844,24 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="FrameworkServlet.class" tooltip="org.springframework.web.servlet.FrameworkServlet">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=mint_app_back/D:\/Work\/mintApp\/mint_app_back\/WebRoot\/WEB-INF\/lib\/spring-webmvc-4.1.1.RELEASE.jar&lt;org.springframework.web.servlet(FrameworkServlet.class"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.editor.webapp25" name="web.xml" tooltip="mint_app_back/WebRoot/WEB-INF/web.xml">
+<persistable path="/mint_app_back/WebRoot/WEB-INF/web.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.jsp" name="index.jsp" tooltip="mint_app_back/WebRoot/index.jsp">
+<persistable path="/mint_app_back/WebRoot/index.jsp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.html" name="a.html" tooltip="mint_app_back/WebRoot/mint/views/a.html">
+<persistable path="/mint_app_back/WebRoot/mint/views/a.html"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.springframework.springconfigeditor" name="springmvc.xml" tooltip="mint_app_back/src/springmvc.xml">
+<persistable path="/mint_app_back/src/springmvc.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.springframework.springconfigeditor" name="spring-mybatis.xml" tooltip="mint_app_back/src/spring-mybatis.xml">
+<persistable path="/mint_app_back/src/spring-mybatis.xml"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ValidateUtil.java" tooltip="mint_app_back/src/cn/common/controller/ValidateUtil.java">
 <persistable path="/mint_app_back/src/cn/common/controller/ValidateUtil.java"/>
 </file>
@@ -835,18 +877,6 @@
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UserService.java" tooltip="mint_app_back/src/cn/yun/service/UserService.java">
 <persistable path="/mint_app_back/src/cn/yun/service/UserService.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.springframework.springconfigeditor" name="spring-mybatis.xml" tooltip="mint_app_back/src/spring-mybatis.xml">
-<persistable path="/mint_app_back/src/spring-mybatis.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.editor.webapp25" name="web.xml" tooltip="mint_app_back/WebRoot/WEB-INF/web.xml">
-<persistable path="/mint_app_back/WebRoot/WEB-INF/web.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.springframework.springconfigeditor" name="springmvc.xml" tooltip="mint_app_back/src/springmvc.xml">
-<persistable path="/mint_app_back/src/springmvc.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.jsp" name="index.jsp" tooltip="mint_app_back/WebRoot/index.jsp">
-<persistable path="/mint_app_back/WebRoot/index.jsp"/>
-</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TLoginUser.java" tooltip="mint_app_back/src/cn/yun/dto/TLoginUser.java">
 <persistable path="/mint_app_back/src/cn/yun/dto/TLoginUser.java"/>
 </file>
@@ -858,12 +888,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="MANIFEST.MF" tooltip="mint_app_back/WebRoot/META-INF/MANIFEST.MF">
 <persistable path="/mint_app_back/WebRoot/META-INF/MANIFEST.MF"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="TMintUsersMapper.xml" tooltip="mint_app_back/src/cn/yun/mapper/TMintUsersMapper.xml">
-<persistable path="/mint_app_back/src/cn/yun/mapper/TMintUsersMapper.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="login.java" tooltip="mint_app_back/src/cn/yun/controller/login.java">
-<persistable path="/mint_app_back/src/cn/yun/controller/login.java"/>
 </file>
 </mruList>
 </workbench>

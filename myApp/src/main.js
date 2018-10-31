@@ -17,12 +17,24 @@ import Vuelidate from 'vuelidate'
 // 引入vant
 import Vant from 'vant';
 import 'vant/lib/vant-css/index.css';
+// 引入vue-amap
+import VueAMap from 'vue-amap';
+Vue.use(VueAMap);
 
 Vue.use(Vant);
 Vue.use(Vuelidate)
 Vue.use(MintUI)
 Vue.config.productionTip = false
 Vue.prototype.$http = axios
+    // 初始化vue-amap
+VueAMap.initAMapApiLoader({
+    // 申请的高德key
+    key: '92553b50fcc62662134997ee4ccc7bfd',
+    // 插件集合
+    plugin: ['Autocomplete', 'Geolocation', 'OverView', 'PlaceSearch', 'Scale', 'OverView', 'ToolBar', 'MapType', 'PolyEditor', 'AMap.CircleEditor'],
+    // 版本号必须引入，否则无法实例化
+    uiVersion: '1.0.11'
+});
 
 // 路由守卫
 const nextRoute = ['index', 'map'];
