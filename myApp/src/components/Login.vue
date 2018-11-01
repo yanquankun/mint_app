@@ -83,6 +83,16 @@ export default {
       this.password = this.password.slice(0, this.password.length - 1);
     },
     login() {
+        // cordova转app暂时添加前端登录---start
+      if (this.username == "mint" && this.password == "111") {
+        this.isLogin = true;
+        sessionStorage.setItem("getLogin", this.isLogin);
+        this.$router.push("/index");
+      } else {
+        this.isLogin = false;
+        sessionStorage.setItem("getLogin", this.isLogin);
+      }
+      //----------------------end
       this.$store.dispatch("getLogin", {
         username: this.username,
         password: this.password

@@ -3,7 +3,8 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-// 引入mint-ui
+Vue.config.productionTip = false
+    // 引入mint-ui
 import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.css'
 //　引入公用样式
@@ -56,12 +57,13 @@ router.beforeEach((to, from, next) => {
 });
 
 /* eslint-disable no-new */
-new Vue({
-    el: '#app',
-    router,
-    store,
-    components: {
-        App
-    },
-    template: '<App/>'
-})
+document.addEventListener('deviceready', function() {
+    new Vue({
+        el: '#app',
+        router,
+        store,
+        template: '<App/>',
+        components: { App }
+    })
+    window.navigator.splashscreen.hide()
+}, false);
