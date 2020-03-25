@@ -3,7 +3,7 @@
     <wb-module deploy-name="mint_app_back">
         <wb-resource deploy-path="/" source-path="/WebRoot"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
-        <property name="context-root" value="/mint_app_back"/>
         <property name="java-output-path" value="/mint_app_back/WebRoot/WEB-INF/classes"/>
+        <property name="context-root" value="/mint"/>
     </wb-module>
 </project-modules>

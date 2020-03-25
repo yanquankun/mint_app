@@ -3,7 +3,7 @@
   type="WEB"
   name="mint_app_back"
   id="myeclipse.1534990134135"
-  context-root="/mint_app_back"
+  context-root="/mint"
   j2ee-spec="5.0"
   archive="mint_app_back.war">
   <attributes>
