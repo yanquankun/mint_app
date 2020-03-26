@@ -14,7 +14,7 @@ Vue.use(Router)
 
 export default new Router({
     // 使用h5路由模式，避免路由出现#
-    mode: 'history',
+    mode: 'hash',
     base: '/',
     routes: [{
         path: '/',

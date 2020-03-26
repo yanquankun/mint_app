@@ -12,9 +12,9 @@
 </template>
 <script>
 import { Lazyload } from "mint-ui";
-import img1 from "./../../assets/5.jpg";
-import img2 from "./../../assets/d7727071755e6bbcc176b58e9a049d1c.jpg";
-import img3 from "./../../assets/timg.jpg";
+import img1 from "./../../../static/5.jpg";
+import img2 from "./../../../static/d7727071755e6bbcc176b58e9a049d1c.jpg";
+import img3 from "./../../../static/timg.jpg";
 
 export default {
   data() {

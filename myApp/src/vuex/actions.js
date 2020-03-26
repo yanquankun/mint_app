@@ -3,7 +3,7 @@ import axios from '../../node_modules/axios';
 
 export const getLogin = (context, args) => {
     axios
-        .get("api/User/login", {
+        .get("/mint/User/login", {
             params: {
                 username: args.username,
                 password: args.password
@@ -17,7 +17,7 @@ export const getLogin = (context, args) => {
 
 export const regisResult = (context, args) => {
     axios
-        .get("api/User/regis", {
+        .get("/mint/User/regis", {
             params: {
                 guid: args.guid,
                 username: args.username,

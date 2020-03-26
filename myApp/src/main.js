@@ -16,7 +16,7 @@ import store from './vuex/store'
 import Vuelidate from 'vuelidate'
 // 引入vant
 import Vant from 'vant';
-import 'vant/lib/vant-css/index.css';
+import 'vant/lib/index.css';
 // 引入vue-amap
 import VueAMap from 'vue-amap';
 Vue.use(VueAMap);

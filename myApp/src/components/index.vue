@@ -5,7 +5,7 @@
                 <mt-button icon="back">地图导航</mt-button>
             </router-link>
         </mt-header>
-        <van-notice-bar left-icon="./../assets/tips.png" @click="tip_click()" mode="closeable" :delay=delay :scrollable="scrollable">
+        <van-notice-bar left-icon="./../../static/tips.png" @click="tip_click()" mode="closeable" :delay=delay :scrollable="scrollable">
             {{show_tip_msg}}
         </van-notice-bar>
         <a class="git" @click="loginOut()">退出</a>
